@@ -1,6 +1,9 @@
 from fastapi import APIRouter, BackgroundTasks, HTTPException, Query
 
-from app.schemas.part5_schemas import Part5GenerationRequest, Part5GenerationResponse
+from app.schemas.admin.part5_schemas import (
+    Part5GenerationRequest,
+    Part5GenerationResponse,
+)
 from app.services.question_service import QuestionService
 
 router = APIRouter()
