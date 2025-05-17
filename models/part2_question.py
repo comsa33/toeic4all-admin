@@ -16,7 +16,7 @@ class Choice(BaseModel):
 
 
 class Part2Question(BaseModel):
-    part: Literal[2] = 2
+    part: int = Field(2, frozen=True)
 
     audio: str  # 질문 음원
     questionText: str

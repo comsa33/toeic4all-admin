@@ -15,7 +15,7 @@ class Choice(BaseModel):
 
 
 class Part1Question(BaseModel):
-    part: Literal[1] = 1
+    part: int = Field(1, frozen=True)
 
     # 사진·오디오
     image: str
