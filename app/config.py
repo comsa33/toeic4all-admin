@@ -1,11 +1,16 @@
 import os
+import pathlib
 
 from dotenv import load_dotenv
 from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
+# 현재 파일의 디렉토리 경로 구하기
+BASE_DIR = pathlib.Path(__file__).parent
+# .env 파일 경로 설정
+ENV_PATH = BASE_DIR / ".env"
 # .env 파일 로드
-load_dotenv(".env")
+load_dotenv(ENV_PATH)
 
 
 class Settings(BaseSettings):
@@ -43,7 +48,10 @@ class Settings(BaseSettings):
 
     # 환경 변수 파일 경로 및 케이스 설정
     model_config = SettingsConfigDict(
-        env_file=".env", env_file_encoding="utf-8", case_sensitive=False, extra="ignore"
+        env_file=str(ENV_PATH),
+        env_file_encoding="utf-8",
+        case_sensitive=False,
+        extra="ignore",
     )
 
 

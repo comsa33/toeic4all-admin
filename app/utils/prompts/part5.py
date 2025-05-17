@@ -67,7 +67,12 @@ _FEWSHOT_MAP = {
     "반의어": Part5FewShotExamples.vocabulary_antonym,
     "관용표현": Part5FewShotExamples.vocabulary_idiom,
     "Collocation": Part5FewShotExamples.vocabulary_collocation,
-    # 나머지 세부유형은 필요시 추가
+    "Phrasal Verb": Part5FewShotExamples.vocabulary_phrasal_verb,
+    "시간·장소 전치사": Part5FewShotExamples.preposition_time_place,
+    "원인·결과": Part5FewShotExamples.conjunction_cause_effect,
+    "양보": Part5FewShotExamples.conjunction_concession,
+    "조건": Part5FewShotExamples.conjunction_condition,
+    "접속부사": Part5FewShotExamples.conjunction_preposition_conjunctive_adverb,
 }
 
 

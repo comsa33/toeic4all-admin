@@ -836,3 +836,390 @@ class Part5FewShotExamples:
             ],
         },
     ]
+
+    # 어휘 - phrasal verb
+    vocabulary_phrasal_verb = [
+        {
+            "part": 5,
+            "questionCategory": "어휘",
+            "questionSubType": "phrasal verb",
+            "difficulty": "Medium",
+            "questionText": "The manager asked the team to ___ their ideas for the project.",
+            "questionTranslation": "매니저는 팀에게 프로젝트에 대한 아이디어를 ___ 해 달라고 했다.",
+            "choices": [
+                {"id": "A", "text": "come up with", "translation": "생각해 내다"},
+                {"id": "B", "text": "give up", "translation": "포기하다"},
+                {"id": "C", "text": "look into", "translation": "조사하다"},
+                {"id": "D", "text": "put off", "translation": "미루다"},
+            ],
+            "answer": "A",
+            "explanation": "'come up with' = 생각해 내다.",
+            "vocabulary": [
+                {
+                    "word": "idea",
+                    "meaning": "아이디어",
+                    "partOfSpeech": "noun",
+                }
+            ],
+        },
+        {
+            "part": 5,
+            "questionCategory": "어휘",
+            "questionSubType": "phrasal verb",
+            "difficulty": "Medium",
+            "questionText": "The new policy will ___ next month.",
+            "questionTranslation": "새 정책은 다음 달에 ___ 것이다.",
+            "choices": [
+                {"id": "A", "text": "take effect", "translation": "효력을 발휘하다"},
+                {"id": "B", "text": "put off", "translation": "미루다"},
+                {"id": "C", "text": "give in", "translation": "양보하다"},
+                {"id": "D", "text": "turn down", "translation": "거절하다"},
+            ],
+            "answer": "A",
+            "explanation": "'take effect' = 효력을 발휘하다.",
+            "vocabulary": [
+                {"word": "policy", "meaning": "정책", "partOfSpeech": "noun"}
+            ],
+        },
+        {
+            "part": 5,
+            "questionCategory": "어휘",
+            "questionSubType": "phrasal verb",
+            "difficulty": "Medium",
+            "questionText": "The team needs to ___ the deadline for the project.",
+            "questionTranslation": "팀은 프로젝트의 마감일을 ___ 필요가 있다.",
+            "choices": [
+                {"id": "A", "text": "put off", "translation": "미루다"},
+                {"id": "B", "text": "bring up", "translation": "제기하다"},
+                {"id": "C", "text": "carry out", "translation": "실행하다"},
+                {"id": "D", "text": "set up", "translation": "설정하다"},
+            ],
+            "answer": "D",
+            "explanation": "'set up' = 설정하다.",
+            "vocabulary": [
+                {
+                    "word": "deadline",
+                    "meaning": "마감일",
+                    "partOfSpeech": "noun",
+                }
+            ],
+        },
+    ]
+    # 전치사/접속사/접속부사 - 시간·장소 전치사
+    preposition_time_place = [
+        {
+            "part": 5,
+            "questionCategory": "전치사/접속사/접속부사",
+            "questionSubType": "시간·장소 전치사",
+            "difficulty": "Medium",
+            "questionText": "The meeting is scheduled for ___ 3 PM.",
+            "questionTranslation": "회의는 ___ 오후 3시에 예정되어 있다.",
+            "choices": [
+                {"id": "A", "text": "in", "translation": "안에"},
+                {"id": "B", "text": "on", "translation": "위에"},
+                {"id": "C", "text": "at", "translation": "에서"},
+                {"id": "D", "text": "to", "translation": "로"},
+            ],
+            "answer": "C",
+            "explanation": "'at' = 특정 시간에.",
+            "vocabulary": [
+                {
+                    "word": "meeting",
+                    "meaning": "회의",
+                    "partOfSpeech": "noun",
+                }
+            ],
+        },
+        {
+            "part": 5,
+            "questionCategory": "전치사/접속사/접속부사",
+            "questionSubType": "시간·장소 전치사",
+            "difficulty": "Medium",
+            "questionText": "The report is due ___ Friday.",
+            "questionTranslation": "보고서는 금요일에 ___ 예정이다.",
+            "choices": [
+                {"id": "A", "text": "in", "translation": "안에"},
+                {"id": "B", "text": "on", "translation": "위에"},
+                {"id": "C", "text": "at", "translation": "에서"},
+                {"id": "D", "text": "to", "translation": "로"},
+            ],
+            "answer": "B",
+            "explanation": "'on' = 특정 날짜에.",
+            "vocabulary": [
+                {
+                    "word": "report",
+                    "meaning": "보고서",
+                    "partOfSpeech": "noun",
+                }
+            ],
+        },
+        {
+            "part": 5,
+            "questionCategory": "전치사/접속사/접속부사",
+            "questionSubType": "시간·장소 전치사",
+            "difficulty": "Medium",
+            "questionText": "The conference will be held ___ the downtown area.",
+            "questionTranslation": "회의는 ___ 시내 지역에서 열릴 것이다.",
+            "choices": [
+                {"id": "A", "text": "in", "translation": "안에"},
+                {"id": "B", "text": "on", "translation": "위에"},
+                {"id": "C", "text": "at", "translation": "에서"},
+                {"id": "D", "text": "to", "translation": "로"},
+            ],
+            "answer": "A",
+            "explanation": "'in' = 특정 장소에.",
+            "vocabulary": [
+                {"word": "conference", "meaning": "회의", "partOfSpeech": "noun"}
+            ],
+        },
+    ]
+
+    # 전치사/접속사/접속부사 - 원인·결과
+    conjunction_cause_effect = [
+        {
+            "part": 5,
+            "questionCategory": "전치사/접속사/접속부사",
+            "questionSubType": "원인·결과",
+            "difficulty": "High",
+            "questionText": "The company achieved record sales ___ the economic downturn.",
+            "questionTranslation": "경기 침체에도 불구하고 회사는 기록적인 매출을 달성했다.",
+            "choices": [
+                {"id": "A", "text": "despite", "translation": "~에도 불구하고"},
+                {"id": "B", "text": "because of", "translation": "~때문에"},
+                {"id": "C", "text": "due to", "translation": "~때문에"},
+                {"id": "D", "text": "as a result of", "translation": "~의 결과로"},
+            ],
+            "answer": "A",
+            "explanation": "'despite'는 ~에도 불구하고라는 의미로, 역접 관계를 나타냄.",
+            "vocabulary": [
+                {"word": "downturn", "meaning": "경기 침체", "partOfSpeech": "noun"}
+            ],
+        },
+        {
+            "part": 5,
+            "questionCategory": "전치사/접속사/접속부사",
+            "questionSubType": "원인·결과",
+            "difficulty": "High",
+            "questionText": "___ his outstanding performance, Mr. Kim was promoted to manager.",
+            "questionTranslation": "김 씨는 뛰어난 실적 ___ 매니저로 승진했다.",
+            "choices": [
+                {"id": "A", "text": "Because of", "translation": "~때문에"},
+                {"id": "B", "text": "In spite of", "translation": "~에도 불구하고"},
+                {"id": "C", "text": "Although", "translation": "~이지만"},
+                {"id": "D", "text": "Whereas", "translation": "~인 반면에"},
+            ],
+            "answer": "A",
+            "explanation": "'Because of'는 ~때문에라는 의미로, 원인·이유를 나타냄.",
+            "vocabulary": [
+                {
+                    "word": "outstanding",
+                    "meaning": "뛰어난",
+                    "partOfSpeech": "adjective",
+                }
+            ],
+        },
+        {
+            "part": 5,
+            "questionCategory": "전치사/접속사/접속부사",
+            "questionSubType": "원인·결과",
+            "difficulty": "High",
+            "questionText": "The shipment was delayed ___ a strike at the port.",
+            "questionTranslation": "항구의 파업 ___ 배송이 지연되었다.",
+            "choices": [
+                {"id": "A", "text": "because of", "translation": "~때문에"},
+                {"id": "B", "text": "despite", "translation": "~에도 불구하고"},
+                {"id": "C", "text": "although", "translation": "~이지만"},
+                {"id": "D", "text": "even though", "translation": "~임에도 불구하고"},
+            ],
+            "answer": "A",
+            "explanation": "'because of'는 ~때문에라는 의미로, 원인·이유를 명확히 나타냄.",
+            "vocabulary": [
+                {"word": "strike", "meaning": "파업", "partOfSpeech": "noun"}
+            ],
+        },
+    ]
+
+    # 전치사/접속사/접속부사 - 양보
+    conjunction_concession = [
+        {
+            "part": 5,
+            "questionCategory": "전치사/접속사/접속부사",
+            "questionSubType": "양보",
+            "difficulty": "High",
+            "questionText": "___ the challenges, the team completed the project on time.",
+            "questionTranslation": "어려움에도 불구하고 팀은 프로젝트를 제시간에 완료했다.",
+            "choices": [
+                {"id": "A", "text": "In spite of", "translation": "~에도 불구하고"},
+                {"id": "B", "text": "Because of", "translation": "~때문에"},
+                {"id": "C", "text": "Due to", "translation": "~때문에"},
+                {"id": "D", "text": "Although", "translation": "~이지만"},
+            ],
+            "answer": "A",
+            "explanation": "'In spite of'는 ~에도 불구하고라는 의미로, 역접 관계를 나타냄.",
+            "vocabulary": [
+                {"word": "challenge", "meaning": "어려움", "partOfSpeech": "noun"}
+            ],
+        },
+        {
+            "part": 5,
+            "questionCategory": "전치사/접속사/접속부사",
+            "questionSubType": "양보",
+            "difficulty": "High",
+            "questionText": "___ the rain, the event will proceed as planned.",
+            "questionTranslation": "비가 ___ 행사 진행은 예정대로 진행된다.",
+            "choices": [
+                {"id": "A", "text": "Despite", "translation": "~에도 불구하고"},
+                {"id": "B", "text": "Because of", "translation": "~때문에"},
+                {"id": "C", "text": "Due to", "translation": "~때문에"},
+                {"id": "D", "text": "Although", "translation": "~이지만"},
+            ],
+            "answer": "A",
+            "explanation": "'Despite'는 ~에도 불구하고라는 의미로, 역접 관계를 나타냄.",
+            "vocabulary": [
+                {"word": "event", "meaning": "행사", "partOfSpeech": "noun"}
+            ],
+        },
+        {
+            "part": 5,
+            "questionCategory": "전치사/접속사/접속부사",
+            "questionSubType": "양보",
+            "difficulty": "High",
+            "questionText": "___ the difficulties, she managed to finish the report.",
+            "questionTranslation": "어려움에도 불구하고 그녀는 보고서를 끝냈다.",
+            "choices": [
+                {"id": "A", "text": "In spite of", "translation": "~에도 불구하고"},
+                {"id": "B", "text": "Because of", "translation": "~때문에"},
+                {"id": "C", "text": "Due to", "translation": "~때문에"},
+                {"id": "D", "text": "Although", "translation": "~이지만"},
+            ],
+            "answer": "A",
+            "explanation": "'In spite of'는 ~에도 불구하고라는 의미로, 역접 관계를 나타냄.",
+            "vocabulary": [
+                {"word": "manage", "meaning": "해내다", "partOfSpeech": "verb"}
+            ],
+        },
+    ]
+    # 전치사/접속사/접속부사 - 조건
+    conjunction_condition = [
+        {
+            "part": 5,
+            "questionCategory": "전치사/접속사/접속부사",
+            "questionSubType": "조건",
+            "difficulty": "High",
+            "questionText": "___ you finish the report, we can submit it tomorrow.",
+            "questionTranslation": "보고서를 ___ 내일 제출할 수 있다.",
+            "choices": [
+                {"id": "A", "text": "If", "translation": "~라면"},
+                {"id": "B", "text": "Unless", "translation": "~하지 않는 한"},
+                {"id": "C", "text": "Although", "translation": "~이지만"},
+                {"id": "D", "text": "In case of", "translation": "~의 경우에"},
+            ],
+            "answer": "A",
+            "explanation": "'If'는 조건을 나타내는 접속사.",
+            "vocabulary": [
+                {"word": "submit", "meaning": "제출하다", "partOfSpeech": "verb"}
+            ],
+        },
+        {
+            "part": 5,
+            "questionCategory": "전치사/접속사/접속부사",
+            "questionSubType": "조건",
+            "difficulty": "High",
+            "questionText": "___ you need assistance, please call the help desk.",
+            "questionTranslation": "도움이 ___ 필요하면, 헬프 데스크에 전화해 주세요.",
+            "choices": [
+                {"id": "A", "text": "If", "translation": "~라면"},
+                {"id": "B", "text": "Unless", "translation": "~하지 않는 한"},
+                {"id": "C", "text": "Although", "translation": "~이지만"},
+                {"id": "D", "text": "In case of", "translation": "~의 경우에"},
+            ],
+            "answer": "A",
+            "explanation": "'If'는 조건을 나타내는 접속사.",
+            "vocabulary": [
+                {"word": "assistance", "meaning": "도움", "partOfSpeech": "noun"}
+            ],
+        },
+        {
+            "part": 5,
+            "questionCategory": "전치사/접속사/접속부사",
+            "questionSubType": "조건",
+            "difficulty": "High",
+            "questionText": "___ it rains, the event will be postponed.",
+            "questionTranslation": "비가 ___ 행사 연기될 것이다.",
+            "choices": [
+                {"id": "A", "text": "If", "translation": "~라면"},
+                {"id": "B", "text": "Unless", "translation": "~하지 않는 한"},
+                {"id": "C", "text": "Although", "translation": "~이지만"},
+                {"id": "D", "text": "In case of", "translation": "~의 경우에"},
+            ],
+            "answer": "A",
+            "explanation": "'If'는 조건을 나타내는 접속사.",
+            "vocabulary": [
+                {"word": "postpone", "meaning": "연기하다", "partOfSpeech": "verb"}
+            ],
+        },
+    ]
+
+    # 전치사/접속사/접속부사 - 접속부사
+    conjunction_preposition_conjunctive_adverb = [
+        {
+            "part": 5,
+            "questionCategory": "전치사/접속사/접속부사",
+            "questionSubType": "접속부사",
+            "difficulty": "High",
+            "questionText": "The team worked overtime; ___, the project was completed on schedule.",
+            "questionTranslation": "팀은 초과 근무를 했다; ___, 프로젝트는 예정대로 완료되었다.",
+            "choices": [
+                {"id": "A", "text": "however", "translation": "그러나"},
+                {"id": "B", "text": "because", "translation": "왜냐하면"},
+                {"id": "C", "text": "although", "translation": "비록 ~일지라도"},
+                {"id": "D", "text": "since", "translation": "~이래로"},
+            ],
+            "answer": "A",
+            "explanation": "'however'는 앞 문장과 대조되는 접속부사.",
+            "vocabulary": [
+                {"word": "overtime", "meaning": "초과 근무", "partOfSpeech": "noun"},
+                {"word": "schedule", "meaning": "일정", "partOfSpeech": "noun"},
+            ],
+        },
+        {
+            "part": 5,
+            "questionCategory": "전치사/접속사/접속부사",
+            "questionSubType": "접속부사",
+            "difficulty": "High",
+            "questionText": "The company expanded rapidly; ___, it faced several challenges.",
+            "questionTranslation": "회사는 빠르게 확장했다; ___, 여러 도전에 직면했다.",
+            "choices": [
+                {"id": "A", "text": "nevertheless", "translation": "그럼에도 불구하고"},
+                {"id": "B", "text": "because", "translation": "왜냐하면"},
+                {"id": "C", "text": "unless", "translation": "~하지 않는 한"},
+                {"id": "D", "text": "while", "translation": "~하는 동안"},
+            ],
+            "answer": "A",
+            "explanation": "'nevertheless'는 앞 문장과 역접 관계를 나타내는 접속부사.",
+            "vocabulary": [
+                {"word": "expand", "meaning": "확장하다", "partOfSpeech": "verb"},
+                {"word": "challenge", "meaning": "도전", "partOfSpeech": "noun"},
+            ],
+        },
+        {
+            "part": 5,
+            "questionCategory": "전치사/접속사/접속부사",
+            "questionSubType": "접속부사",
+            "difficulty": "High",
+            "questionText": "The deadline is approaching; ___, all team members must submit their reports.",
+            "questionTranslation": "마감일이 다가오고 있다; ___, 모든 팀원은 보고서를 제출해야 한다.",
+            "choices": [
+                {"id": "A", "text": "therefore", "translation": "그러므로"},
+                {"id": "B", "text": "although", "translation": "비록 ~일지라도"},
+                {"id": "C", "text": "because", "translation": "왜냐하면"},
+                {"id": "D", "text": "unless", "translation": "~하지 않는 한"},
+            ],
+            "answer": "A",
+            "explanation": "'therefore'는 앞의 원인에 대한 결과를 나타내는 접속부사.",
+            "vocabulary": [
+                {"word": "approach", "meaning": "다가오다", "partOfSpeech": "verb"},
+                {"word": "submit", "meaning": "제출하다", "partOfSpeech": "verb"},
+            ],
+        },
+    ]
