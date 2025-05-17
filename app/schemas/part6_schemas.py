@@ -1,6 +1,6 @@
 from typing import List, Optional
 
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field, field_validator
 
 
 class Part6GenerationRequest(BaseModel):
@@ -14,8 +14,8 @@ class Part6GenerationRequest(BaseModel):
         ..., description="지문 유형 (e.g., 'Email/Letter', 'Notice')"
     )
 
-    @validator("passage_type")
-    def validate_passage_type(cls, v):
+    @field_validator("passage_type")
+    def validate_passage_type(cls, v, info):
         allowed_passage_types = [
             "Email/Letter",
             "Memo",

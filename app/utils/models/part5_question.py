@@ -13,8 +13,8 @@ class VocabularyItem(BaseModel):
     word: str
     meaning: str
     partOfSpeech: str
-    example: str | None = None
-    exampleTranslation: str | None = Field(None, alias="exampleTranslation")
+    example: str
+    exampleTranslation: str
 
 
 class Part5Question(BaseModel):

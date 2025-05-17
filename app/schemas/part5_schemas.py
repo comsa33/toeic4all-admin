@@ -1,6 +1,6 @@
 from typing import List, Optional
 
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field, field_validator
 
 
 class Part5GenerationRequest(BaseModel):
@@ -13,21 +13,21 @@ class Part5GenerationRequest(BaseModel):
     category: str = Field(..., description="문법 카테고리")
     subcategory: str = Field(..., description="문법 서브 카테고리")
 
-    @validator("category")
+    @field_validator("category")
     def validate_category(cls, v):
-        allowed_categories = ["문법", "어휘", "전치사/접속사"]
+        allowed_categories = ["문법", "어휘", "전치사/접속사/접속부사"]
         if v not in allowed_categories:
             raise ValueError(
                 f"카테고리는 {', '.join(allowed_categories)} 중 하나여야 합니다."
             )
         return v
 
-    @validator("subcategory")
-    def validate_subcategory(cls, v, values):
-        if "category" not in values:
+    @field_validator("subcategory")
+    def validate_subcategory(cls, v, info):
+        if not hasattr(info, "data") or "category" not in info.data:
             return v
 
-        category = values["category"]
+        category = info.data["category"]
         allowed_subcategories = {
             "문법": [
                 "시제",

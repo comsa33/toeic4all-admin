@@ -1,6 +1,6 @@
 from typing import List, Optional
 
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field, field_validator
 
 
 class Part7GenerationRequest(BaseModel):
@@ -15,12 +15,12 @@ class Part7GenerationRequest(BaseModel):
     )
     passage_types: List[str] = Field(..., description="지문 유형 리스트")
 
-    @validator("passage_types")
-    def validate_passage_types(cls, v, values):
-        if "set_type" not in values:
+    @field_validator("passage_types")
+    def validate_passage_types(cls, v, info):
+        if not hasattr(info, "data") or "set_type" not in info.data:
             return v
 
-        set_type = values["set_type"]
+        set_type = info.data["set_type"]
         expected_length = {"Single": 1, "Double": 2, "Triple": 3}.get(set_type, 0)
 
         if len(v) != expected_length:

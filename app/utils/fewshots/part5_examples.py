@@ -21,7 +21,13 @@ class Part5FewShotExamples:
             "answer": "C",
             "explanation": "과거 시점 시작→현재까지 결과 = 현재완료 ‘have risen’.",
             "vocabulary": [
-                {"word": "figure", "meaning": "수치", "partOfSpeech": "noun"}
+                {
+                    "word": "figure",
+                    "meaning": "수치",
+                    "partOfSpeech": "noun",
+                    "example": "The sales figures increased last year.",
+                    "exampleTranslation": "지난해 매출 수치가 증가했다.",
+                }
             ],
         },
         {
@@ -52,6 +58,8 @@ class Part5FewShotExamples:
                     "word": "proposal",
                     "meaning": "제안서",
                     "partOfSpeech": "noun",
+                    "example": "She submitted a proposal for the new project.",
+                    "exampleTranslation": "그녀는 새 프로젝트에 대한 제안서를 제출했다.",
                 }
             ],
         },
@@ -83,6 +91,8 @@ class Part5FewShotExamples:
                     "word": "conference",
                     "meaning": "회의",
                     "partOfSpeech": "noun",
+                    "example": "The conference will be held in Seoul.",
+                    "exampleTranslation": "회의는 서울에서 열릴 것이다.",
                 }
             ],
         },
@@ -110,6 +120,8 @@ class Part5FewShotExamples:
                     "word": "responsible",
                     "meaning": "책임 있는",
                     "partOfSpeech": "adjective",
+                    "example": "She is responsible for the project.",
+                    "exampleTranslation": "그녀는 그 프로젝트에 책임이 있다.",
                 }
             ],
         },
@@ -133,6 +145,8 @@ class Part5FewShotExamples:
                     "word": "applicant",
                     "meaning": "지원자",
                     "partOfSpeech": "noun",
+                    "example": "Each applicant must submit a resume.",
+                    "exampleTranslation": "각 지원자는 이력서를 제출해야 한다.",
                 }
             ],
         },
@@ -156,6 +170,8 @@ class Part5FewShotExamples:
                     "word": "retreat",
                     "meaning": "워크숍/연수",
                     "partOfSpeech": "noun",
+                    "example": "The team attended a retreat last month.",
+                    "exampleTranslation": "팀은 지난달 연수에 참석했다.",
                 }
             ],
         },
@@ -182,7 +198,13 @@ class Part5FewShotExamples:
             "answer": "B",
             "explanation": "행위자 accounting dept → 수동 ‘is prepared’.",
             "vocabulary": [
-                {"word": "quarter", "meaning": "분기", "partOfSpeech": "noun"}
+                {
+                    "word": "quarter",
+                    "meaning": "분기",
+                    "partOfSpeech": "noun",
+                    "example": "The company releases earnings every quarter.",
+                    "exampleTranslation": "회사는 매 분기마다 실적을 발표한다.",
+                }
             ],
         },
         {
@@ -201,7 +223,13 @@ class Part5FewShotExamples:
             "answer": "B",
             "explanation": "CEO가 행위자 → 능동 ‘deliver’.",
             "vocabulary": [
-                {"word": "keynote", "meaning": "기조", "partOfSpeech": "noun"}
+                {
+                    "word": "keynote",
+                    "meaning": "기조",
+                    "partOfSpeech": "noun",
+                    "example": "She gave the keynote address at the conference.",
+                    "exampleTranslation": "그녀는 회의에서 기조연설을 했다.",
+                }
             ],
         },
         {
@@ -232,6 +260,8 @@ class Part5FewShotExamples:
                     "word": "feedback",
                     "meaning": "피드백",
                     "partOfSpeech": "noun",
+                    "example": "We received positive feedback from customers.",
+                    "exampleTranslation": "우리는 고객들로부터 긍정적인 피드백을 받았다.",
                 }
             ],
         },
@@ -258,6 +288,8 @@ class Part5FewShotExamples:
                     "word": "replacement",
                     "meaning": "교체품",
                     "partOfSpeech": "noun",
+                    "example": "The company sent a replacement for the broken item.",
+                    "exampleTranslation": "회사는 고장난 물건의 교체품을 보냈다.",
                 }
             ],
         },
@@ -281,6 +313,8 @@ class Part5FewShotExamples:
                     "word": "contract",
                     "meaning": "계약서",
                     "partOfSpeech": "noun",
+                    "example": "They signed the contract last week.",
+                    "exampleTranslation": "그들은 지난주에 계약서에 서명했다.",
                 }
             ],
         },
@@ -304,6 +338,8 @@ class Part5FewShotExamples:
                     "word": "inspection",
                     "meaning": "점검",
                     "partOfSpeech": "noun",
+                    "example": "The inspection was completed successfully.",
+                    "exampleTranslation": "점검이 성공적으로 완료되었다.",
                 }
             ],
         },
@@ -326,7 +362,13 @@ class Part5FewShotExamples:
             "answer": "C",
             "explanation": "비교급 문맥 → higher.",
             "vocabulary": [
-                {"word": "profit", "meaning": "수익", "partOfSpeech": "noun"}
+                {
+                    "word": "profit",
+                    "meaning": "수익",
+                    "partOfSpeech": "noun",
+                    "example": "The company reported high profits this year.",
+                    "exampleTranslation": "회사는 올해 높은 수익을 보고했다.",
+                }
             ],
         },
         {
@@ -349,6 +391,8 @@ class Part5FewShotExamples:
                     "word": "effective",
                     "meaning": "효과적인",
                     "partOfSpeech": "adjective",
+                    "example": "The new strategy was very effective.",
+                    "exampleTranslation": "새 전략은 매우 효과적이었다.",
                 }
             ],
         },
@@ -372,6 +416,8 @@ class Part5FewShotExamples:
                     "word": "operate",
                     "meaning": "작동하다",
                     "partOfSpeech": "verb",
+                    "example": "The machine operates smoothly.",
+                    "exampleTranslation": "기계가 부드럽게 작동한다.",
                 }
             ],
         },
@@ -398,6 +444,8 @@ class Part5FewShotExamples:
                     "word": "conduct",
                     "meaning": "실시하다",
                     "partOfSpeech": "verb",
+                    "example": "The company will conduct a survey.",
+                    "exampleTranslation": "회사가 설문조사를 실시할 것이다.",
                 }
             ],
         },
@@ -433,6 +481,8 @@ class Part5FewShotExamples:
                     "word": "proceed",
                     "meaning": "진행하다",
                     "partOfSpeech": "verb",
+                    "example": "The meeting will proceed as planned.",
+                    "exampleTranslation": "회의는 예정대로 진행될 것이다.",
                 }
             ],
         },
@@ -464,6 +514,8 @@ class Part5FewShotExamples:
                     "word": "negotiation",
                     "meaning": "협상",
                     "partOfSpeech": "noun",
+                    "example": "The negotiation between the companies was successful.",
+                    "exampleTranslation": "회사들 간의 협상이 성공적이었다.",
                 }
             ],
         },
@@ -494,6 +546,8 @@ class Part5FewShotExamples:
                     "word": "install",
                     "meaning": "설치하다",
                     "partOfSpeech": "verb",
+                    "example": "Please install the latest version of the software.",
+                    "exampleTranslation": "최신 버전의 소프트웨어를 설치해 주세요.",
                 }
             ],
         },
@@ -517,6 +571,8 @@ class Part5FewShotExamples:
                     "word": "confidential",
                     "meaning": "기밀의",
                     "partOfSpeech": "adjective",
+                    "example": "The company keeps all client information confidential.",
+                    "exampleTranslation": "회사는 모든 고객 정보를 기밀로 유지한다.",
                 }
             ],
         },
@@ -540,7 +596,13 @@ class Part5FewShotExamples:
             "answer": "B",
             "explanation": "It is important + to 부정사.",
             "vocabulary": [
-                {"word": "field", "meaning": "칸/항목", "partOfSpeech": "noun"}
+                {
+                    "word": "field",
+                    "meaning": "칸/항목",
+                    "partOfSpeech": "noun",
+                    "example": "Please fill in all the fields on the form.",
+                    "exampleTranslation": "양식의 모든 칸을 작성해 주세요.",
+                }
             ],
         },
     ]
@@ -566,6 +628,8 @@ class Part5FewShotExamples:
                     "word": "concise",
                     "meaning": "간결한",
                     "partOfSpeech": "adjective",
+                    "example": "Her explanation was clear and concise.",
+                    "exampleTranslation": "그녀의 설명은 명확하고 간결했다.",
                 }
             ],
         },
@@ -589,6 +653,8 @@ class Part5FewShotExamples:
                     "word": "convene",
                     "meaning": "소집하다",
                     "partOfSpeech": "verb",
+                    "example": "The board will convene next Monday.",
+                    "exampleTranslation": "이사회는 다음 주 월요일에 소집될 것이다.",
                 }
             ],
         },
@@ -608,7 +674,13 @@ class Part5FewShotExamples:
             "answer": "A",
             "explanation": "'negotiation'과 합병 맥락 상 일치.",
             "vocabulary": [
-                {"word": "merge", "meaning": "합병하다", "partOfSpeech": "verb"}
+                {
+                    "word": "merge",
+                    "meaning": "합병하다",
+                    "partOfSpeech": "verb",
+                    "example": "The companies decided to merge last year.",
+                    "exampleTranslation": "그 회사들은 지난해 합병하기로 결정했다.",
+                }
             ],
         },
     ]
@@ -634,6 +706,8 @@ class Part5FewShotExamples:
                     "word": "ambiguous",
                     "meaning": "모호한",
                     "partOfSpeech": "adjective",
+                    "example": "The wording of the contract is ambiguous.",
+                    "exampleTranslation": "계약서의 문구가 모호하다.",
                 }
             ],
         },
@@ -657,6 +731,8 @@ class Part5FewShotExamples:
                     "word": "predecessor",
                     "meaning": "전임자",
                     "partOfSpeech": "noun",
+                    "example": "The new manager replaced his predecessor last month.",
+                    "exampleTranslation": "새 매니저가 지난달 전임자를 교체했다.",
                 }
             ],
         },
@@ -680,6 +756,8 @@ class Part5FewShotExamples:
                     "word": "contrary",
                     "meaning": "반대의",
                     "partOfSpeech": "adjective",
+                    "example": "His opinion is contrary to the majority.",
+                    "exampleTranslation": "그의 의견은 대다수와 반대이다.",
                 }
             ],
         },
@@ -706,6 +784,8 @@ class Part5FewShotExamples:
                     "word": "approve",
                     "meaning": "승인하다",
                     "partOfSpeech": "verb",
+                    "example": "The manager approved the new policy.",
+                    "exampleTranslation": "매니저가 새 정책을 승인했다.",
                 }
             ],
         },
@@ -733,6 +813,8 @@ class Part5FewShotExamples:
                     "word": "resignation",
                     "meaning": "사임",
                     "partOfSpeech": "noun",
+                    "example": "She handed in her resignation yesterday.",
+                    "exampleTranslation": "그녀는 어제 사임서를 제출했다.",
                 }
             ],
         },
@@ -768,7 +850,13 @@ class Part5FewShotExamples:
             "answer": "B",
             "explanation": "up in the air = 결정되지 않은.",
             "vocabulary": [
-                {"word": "data", "meaning": "데이터", "partOfSpeech": "noun"}
+                {
+                    "word": "data",
+                    "meaning": "데이터",
+                    "partOfSpeech": "noun",
+                    "example": "We need more data to make a decision.",
+                    "exampleTranslation": "결정을 내리기 위해 더 많은 데이터가 필요하다.",
+                }
             ],
         },
     ]
@@ -790,7 +878,13 @@ class Part5FewShotExamples:
             "answer": "A",
             "explanation": "‘take a vote’가 자연스러운 연어.",
             "vocabulary": [
-                {"word": "merger", "meaning": "합병", "partOfSpeech": "noun"}
+                {
+                    "word": "merger",
+                    "meaning": "합병",
+                    "partOfSpeech": "noun",
+                    "example": "The merger was approved by the board.",
+                    "exampleTranslation": "합병이 이사회에서 승인되었다.",
+                }
             ],
         },
         {
@@ -809,7 +903,13 @@ class Part5FewShotExamples:
             "answer": "B",
             "explanation": "make an effort = 노력하다.",
             "vocabulary": [
-                {"word": "effort", "meaning": "노력", "partOfSpeech": "noun"}
+                {
+                    "word": "effort",
+                    "meaning": "노력",
+                    "partOfSpeech": "noun",
+                    "example": "She made an effort to finish the project early.",
+                    "exampleTranslation": "그녀는 프로젝트를 일찍 끝내려고 노력했다.",
+                }
             ],
         },
         {
@@ -832,6 +932,8 @@ class Part5FewShotExamples:
                     "word": "aim",
                     "meaning": "목표로 하다",
                     "partOfSpeech": "verb",
+                    "example": "We aim to improve customer satisfaction.",
+                    "exampleTranslation": "우리는 고객 만족도를 높이는 것을 목표로 한다.",
                 }
             ],
         },
@@ -859,6 +961,8 @@ class Part5FewShotExamples:
                     "word": "idea",
                     "meaning": "아이디어",
                     "partOfSpeech": "noun",
+                    "example": "She came up with a great idea.",
+                    "exampleTranslation": "그녀는 훌륭한 아이디어를 생각해 냈다.",
                 }
             ],
         },
@@ -878,7 +982,13 @@ class Part5FewShotExamples:
             "answer": "A",
             "explanation": "'take effect' = 효력을 발휘하다.",
             "vocabulary": [
-                {"word": "policy", "meaning": "정책", "partOfSpeech": "noun"}
+                {
+                    "word": "policy",
+                    "meaning": "정책",
+                    "partOfSpeech": "noun",
+                    "example": "The new policy will take effect next month.",
+                    "exampleTranslation": "새 정책은 다음 달에 효력을 발휘할 것이다.",
+                }
             ],
         },
         {
@@ -901,6 +1011,8 @@ class Part5FewShotExamples:
                     "word": "deadline",
                     "meaning": "마감일",
                     "partOfSpeech": "noun",
+                    "example": "The deadline for the project is next Friday.",
+                    "exampleTranslation": "프로젝트의 마감일은 다음 주 금요일이다.",
                 }
             ],
         },
@@ -927,6 +1039,8 @@ class Part5FewShotExamples:
                     "word": "meeting",
                     "meaning": "회의",
                     "partOfSpeech": "noun",
+                    "example": "The meeting will start at 3 PM.",
+                    "exampleTranslation": "회의는 오후 3시에 시작할 것이다.",
                 }
             ],
         },
@@ -950,6 +1064,8 @@ class Part5FewShotExamples:
                     "word": "report",
                     "meaning": "보고서",
                     "partOfSpeech": "noun",
+                    "example": "The report is due on Friday.",
+                    "exampleTranslation": "보고서는 금요일까지 제출해야 한다.",
                 }
             ],
         },
@@ -969,7 +1085,13 @@ class Part5FewShotExamples:
             "answer": "A",
             "explanation": "'in' = 특정 장소에.",
             "vocabulary": [
-                {"word": "conference", "meaning": "회의", "partOfSpeech": "noun"}
+                {
+                    "word": "conference",
+                    "meaning": "회의",
+                    "partOfSpeech": "noun",
+                    "example": "The conference will be held in the downtown area.",
+                    "exampleTranslation": "회의는 시내 지역에서 열릴 것이다.",
+                }
             ],
         },
     ]
@@ -992,7 +1114,13 @@ class Part5FewShotExamples:
             "answer": "A",
             "explanation": "'despite'는 ~에도 불구하고라는 의미로, 역접 관계를 나타냄.",
             "vocabulary": [
-                {"word": "downturn", "meaning": "경기 침체", "partOfSpeech": "noun"}
+                {
+                    "word": "downturn",
+                    "meaning": "경기 침체",
+                    "partOfSpeech": "noun",
+                    "example": "The company survived the economic downturn.",
+                    "exampleTranslation": "회사는 경기 침체를 견뎌냈다.",
+                }
             ],
         },
         {
@@ -1015,6 +1143,8 @@ class Part5FewShotExamples:
                     "word": "outstanding",
                     "meaning": "뛰어난",
                     "partOfSpeech": "adjective",
+                    "example": "She received an award for her outstanding work.",
+                    "exampleTranslation": "그녀는 뛰어난 업무로 상을 받았다.",
                 }
             ],
         },
@@ -1034,7 +1164,13 @@ class Part5FewShotExamples:
             "answer": "A",
             "explanation": "'because of'는 ~때문에라는 의미로, 원인·이유를 명확히 나타냄.",
             "vocabulary": [
-                {"word": "strike", "meaning": "파업", "partOfSpeech": "noun"}
+                {
+                    "word": "strike",
+                    "meaning": "파업",
+                    "partOfSpeech": "noun",
+                    "example": "The workers went on strike for better pay.",
+                    "exampleTranslation": "노동자들은 더 나은 임금을 위해 파업에 들어갔다.",
+                }
             ],
         },
     ]
@@ -1057,7 +1193,13 @@ class Part5FewShotExamples:
             "answer": "A",
             "explanation": "'In spite of'는 ~에도 불구하고라는 의미로, 역접 관계를 나타냄.",
             "vocabulary": [
-                {"word": "challenge", "meaning": "어려움", "partOfSpeech": "noun"}
+                {
+                    "word": "challenge",
+                    "meaning": "어려움",
+                    "partOfSpeech": "noun",
+                    "example": "We faced many challenges during the project.",
+                    "exampleTranslation": "우리는 프로젝트 동안 많은 어려움에 직면했다.",
+                }
             ],
         },
         {
@@ -1076,7 +1218,13 @@ class Part5FewShotExamples:
             "answer": "A",
             "explanation": "'Despite'는 ~에도 불구하고라는 의미로, 역접 관계를 나타냄.",
             "vocabulary": [
-                {"word": "event", "meaning": "행사", "partOfSpeech": "noun"}
+                {
+                    "word": "event",
+                    "meaning": "행사",
+                    "partOfSpeech": "noun",
+                    "example": "The event will start at 10 AM.",
+                    "exampleTranslation": "행사는 오전 10시에 시작된다.",
+                }
             ],
         },
         {
@@ -1095,7 +1243,13 @@ class Part5FewShotExamples:
             "answer": "A",
             "explanation": "'In spite of'는 ~에도 불구하고라는 의미로, 역접 관계를 나타냄.",
             "vocabulary": [
-                {"word": "manage", "meaning": "해내다", "partOfSpeech": "verb"}
+                {
+                    "word": "manage",
+                    "meaning": "해내다",
+                    "partOfSpeech": "verb",
+                    "example": "She managed to finish the task on time.",
+                    "exampleTranslation": "그녀는 제시간에 과제를 해냈다.",
+                }
             ],
         },
     ]
@@ -1117,7 +1271,13 @@ class Part5FewShotExamples:
             "answer": "A",
             "explanation": "'If'는 조건을 나타내는 접속사.",
             "vocabulary": [
-                {"word": "submit", "meaning": "제출하다", "partOfSpeech": "verb"}
+                {
+                    "word": "submit",
+                    "meaning": "제출하다",
+                    "partOfSpeech": "verb",
+                    "example": "Please submit your application by Friday.",
+                    "exampleTranslation": "금요일까지 지원서를 제출해 주세요.",
+                }
             ],
         },
         {
@@ -1136,7 +1296,13 @@ class Part5FewShotExamples:
             "answer": "A",
             "explanation": "'If'는 조건을 나타내는 접속사.",
             "vocabulary": [
-                {"word": "assistance", "meaning": "도움", "partOfSpeech": "noun"}
+                {
+                    "word": "assistance",
+                    "meaning": "도움",
+                    "partOfSpeech": "noun",
+                    "example": "She asked for assistance with the project.",
+                    "exampleTranslation": "그녀는 프로젝트에 대한 도움을 요청했다.",
+                }
             ],
         },
         {
@@ -1155,7 +1321,13 @@ class Part5FewShotExamples:
             "answer": "A",
             "explanation": "'If'는 조건을 나타내는 접속사.",
             "vocabulary": [
-                {"word": "postpone", "meaning": "연기하다", "partOfSpeech": "verb"}
+                {
+                    "word": "postpone",
+                    "meaning": "연기하다",
+                    "partOfSpeech": "verb",
+                    "example": "The meeting was postponed due to the weather.",
+                    "exampleTranslation": "회의가 날씨 때문에 연기되었다.",
+                }
             ],
         },
     ]
@@ -1178,9 +1350,23 @@ class Part5FewShotExamples:
             "answer": "A",
             "explanation": "'however'는 앞 문장과 대조되는 접속부사.",
             "vocabulary": [
-                {"word": "overtime", "meaning": "초과 근무", "partOfSpeech": "noun"},
-                {"word": "schedule", "meaning": "일정", "partOfSpeech": "noun"},
+                {
+                    "word": "overtime",
+                    "meaning": "초과 근무",
+                    "partOfSpeech": "noun",
+                    "example": "He often works overtime to meet deadlines.",
+                    "exampleTranslation": "그는 마감일을 맞추기 위해 종종 초과 근무를 한다.",
+                },
+                {
+                    "word": "schedule",
+                    "meaning": "일정",
+                    "partOfSpeech": "noun",
+                    "example": "The meeting is on schedule.",
+                    "exampleTranslation": "회의가 예정대로 진행된다.",
+                },
             ],
+            "example": "She was tired; however, she finished her work.",
+            "exampleTranslation": "그녀는 피곤했지만 일을 끝냈다.",
         },
         {
             "part": 5,
@@ -1198,9 +1384,23 @@ class Part5FewShotExamples:
             "answer": "A",
             "explanation": "'nevertheless'는 앞 문장과 역접 관계를 나타내는 접속부사.",
             "vocabulary": [
-                {"word": "expand", "meaning": "확장하다", "partOfSpeech": "verb"},
-                {"word": "challenge", "meaning": "도전", "partOfSpeech": "noun"},
+                {
+                    "word": "expand",
+                    "meaning": "확장하다",
+                    "partOfSpeech": "verb",
+                    "example": "The company plans to expand into new markets.",
+                    "exampleTranslation": "회사는 새로운 시장으로 확장할 계획이다.",
+                },
+                {
+                    "word": "challenge",
+                    "meaning": "도전",
+                    "partOfSpeech": "noun",
+                    "example": "Starting a new business is a big challenge.",
+                    "exampleTranslation": "새로운 사업을 시작하는 것은 큰 도전이다.",
+                },
             ],
+            "example": "It was raining; nevertheless, they went for a walk.",
+            "exampleTranslation": "비가 오고 있었지만 그들은 산책을 나갔다.",
         },
         {
             "part": 5,
@@ -1218,8 +1418,22 @@ class Part5FewShotExamples:
             "answer": "A",
             "explanation": "'therefore'는 앞의 원인에 대한 결과를 나타내는 접속부사.",
             "vocabulary": [
-                {"word": "approach", "meaning": "다가오다", "partOfSpeech": "verb"},
-                {"word": "submit", "meaning": "제출하다", "partOfSpeech": "verb"},
+                {
+                    "word": "approach",
+                    "meaning": "다가오다",
+                    "partOfSpeech": "verb",
+                    "example": "The train is approaching the station.",
+                    "exampleTranslation": "기차가 역에 다가오고 있다.",
+                },
+                {
+                    "word": "submit",
+                    "meaning": "제출하다",
+                    "partOfSpeech": "verb",
+                    "example": "Please submit your application by Friday.",
+                    "exampleTranslation": "금요일까지 지원서를 제출해 주세요.",
+                },
             ],
+            "example": "He was the oldest; therefore, he was chosen as the leader.",
+            "exampleTranslation": "그가 가장 나이가 많아서 리더로 뽑혔다.",
         },
     ]
