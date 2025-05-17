@@ -1,8 +1,8 @@
 import asyncio
 
 from data_loader import insert_part5_questions
+from generation_helpers.genai_generator import generate_part5_questions
 from logger import logger
-from part5_generation import generate_part5_questions
 
 
 async def main(num: int, diff: str, cat: str, sub: str):
