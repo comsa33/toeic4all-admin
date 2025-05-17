@@ -10,7 +10,7 @@ mongo_options = {
     "connectTimeoutMS": 120000,  # 연결 타임아웃 증가
     "serverSelectionTimeoutMS": 40000,  # 서버 선택 타임아웃
     "retryWrites": True,  # 쓰기 작업 재시도
-    "waitQueueTimeoutMS": 25000,  # 대기 큐 타임아웃
+    "waitQueueTimeoutMS": 60000,  # 대기 큐 타임아웃
 }
 
 # MongoDB 클라이언트 생성
