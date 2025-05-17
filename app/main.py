@@ -20,19 +20,12 @@ app.add_middleware(
 )
 
 # API 라우터 등록
-app.include_router(part5_routes.router, prefix="/api/part5", tags=["Part 5"])
-app.include_router(part6_routes.router, prefix="/api/part6", tags=["Part 6"])
-app.include_router(part7_routes.router, prefix="/api/part7", tags=["Part 7"])
+app.include_router(part5_routes.router, prefix="/api/v1/part5", tags=["Part 5"])
+app.include_router(part6_routes.router, prefix="/api/v1/part6", tags=["Part 6"])
+app.include_router(part7_routes.router, prefix="/api/v1/part7", tags=["Part 7"])
 
 
 @app.get("/")
 async def root():
     """API 서버 상태 확인 엔드포인트"""
     return {"status": "online", "message": "TOEIC Question Generator API is running"}
-
-
-if __name__ == "__main__":
-    import uvicorn
-
-    # 개발 환경에서 API 서버 실행
-    uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)
