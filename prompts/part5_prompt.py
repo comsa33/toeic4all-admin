@@ -1,5 +1,5 @@
 import json
-from typing import List
+
 from fewshots.part5_examples import Part5FewShotExamples
 
 SYSTEM_PROMPT_TEMPLATE = """You are an ETS-style TOEIC Part 5 item writer.
@@ -46,11 +46,14 @@ SYSTEM_PROMPT_TEMPLATE = """You are an ETS-style TOEIC Part 5 item writer.
 • JSON only, no markdown, no extra keys.
 """
 
-def build_part5_prompt(num:int, difficulty:str, category:str, subtype:str)->str:
-    if not (1<=num<=10):
+
+def build_part5_prompt(num: int, difficulty: str, category: str, subtype: str) -> str:
+    if not (1 <= num <= 10):
         raise ValueError("NUM_QUESTIONS must be 1–10")
-    return SYSTEM_PROMPT_TEMPLATE.format(num=num,difficulty=difficulty,
-                                         category=category,subtype=subtype)
+    return SYSTEM_PROMPT_TEMPLATE.format(
+        num=num, difficulty=difficulty, category=category, subtype=subtype
+    )
+
 
 _FEWSHOT_MAP = {
     "시제": Part5FewShotExamples.grammar_tense,
@@ -67,6 +70,7 @@ _FEWSHOT_MAP = {
     # 나머지 세부유형은 필요시 추가
 }
 
-def get_fewshot_examples(subtype:str) -> str:
+
+def get_fewshot_examples(subtype: str) -> str:
     """세부유형에 맞는 few-shot JSON(리스트) 반환."""
     return json.dumps(_FEWSHOT_MAP.get(subtype, []), ensure_ascii=False, indent=2)

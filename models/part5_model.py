@@ -1,10 +1,13 @@
-from typing import Literal, List
+from typing import List, Literal
+
 from pydantic import BaseModel, Field
+
 
 class Choice(BaseModel):
     id: Literal["A", "B", "C", "D"]
     text: str
     translation: str
+
 
 class VocabularyItem(BaseModel):
     word: str
@@ -12,6 +15,7 @@ class VocabularyItem(BaseModel):
     partOfSpeech: str
     example: str | None = None
     exampleTranslation: str | None = Field(None, alias="exampleTranslation")
+
 
 class Part5Question(BaseModel):
     part: int = Field(5, frozen=True)
