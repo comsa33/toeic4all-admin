@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from pymongo import AsyncMongoClient
 
 from logger import logger
-from models.part5_model import Part5Question
+from models.part5_question import Part5Question
 
 # Load environment variables from .env file
 load_dotenv()
