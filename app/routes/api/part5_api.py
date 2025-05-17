@@ -126,8 +126,8 @@ async def get_part5_subtypes(category: Optional[str] = None, used_only: bool = F
             "Phrasal Verb",
         ],
         "전치사/접속사/접속부사": [
-            "시간·장소 전치사",
-            "원인·결과",
+            "시간/장소 전치사",
+            "원인/결과",
             "양보",
             "조건",
             "접속부사",

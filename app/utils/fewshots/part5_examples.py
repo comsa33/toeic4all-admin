@@ -1017,12 +1017,12 @@ class Part5FewShotExamples:
             ],
         },
     ]
-    # 전치사/접속사/접속부사 - 시간·장소 전치사
+    # 전치사/접속사/접속부사 - 시간/장소 전치사
     preposition_time_place = [
         {
             "part": 5,
             "questionCategory": "전치사/접속사/접속부사",
-            "questionSubType": "시간·장소 전치사",
+            "questionSubType": "시간/장소 전치사",
             "difficulty": "Medium",
             "questionText": "The meeting is scheduled for ___ 3 PM.",
             "questionTranslation": "회의는 ___ 오후 3시에 예정되어 있다.",
@@ -1047,7 +1047,7 @@ class Part5FewShotExamples:
         {
             "part": 5,
             "questionCategory": "전치사/접속사/접속부사",
-            "questionSubType": "시간·장소 전치사",
+            "questionSubType": "시간/장소 전치사",
             "difficulty": "Medium",
             "questionText": "The report is due ___ Friday.",
             "questionTranslation": "보고서는 금요일에 ___ 예정이다.",
@@ -1072,7 +1072,7 @@ class Part5FewShotExamples:
         {
             "part": 5,
             "questionCategory": "전치사/접속사/접속부사",
-            "questionSubType": "시간·장소 전치사",
+            "questionSubType": "시간/장소 전치사",
             "difficulty": "Medium",
             "questionText": "The conference will be held ___ the downtown area.",
             "questionTranslation": "회의는 ___ 시내 지역에서 열릴 것이다.",
@@ -1096,12 +1096,12 @@ class Part5FewShotExamples:
         },
     ]
 
-    # 전치사/접속사/접속부사 - 원인·결과
+    # 전치사/접속사/접속부사 - 원인/결과
     conjunction_cause_effect = [
         {
             "part": 5,
             "questionCategory": "전치사/접속사/접속부사",
-            "questionSubType": "원인·결과",
+            "questionSubType": "원인/결과",
             "difficulty": "High",
             "questionText": "The company achieved record sales ___ the economic downturn.",
             "questionTranslation": "경기 침체에도 불구하고 회사는 기록적인 매출을 달성했다.",
@@ -1126,7 +1126,7 @@ class Part5FewShotExamples:
         {
             "part": 5,
             "questionCategory": "전치사/접속사/접속부사",
-            "questionSubType": "원인·결과",
+            "questionSubType": "원인/결과",
             "difficulty": "High",
             "questionText": "___ his outstanding performance, Mr. Kim was promoted to manager.",
             "questionTranslation": "김 씨는 뛰어난 실적 ___ 매니저로 승진했다.",
@@ -1151,7 +1151,7 @@ class Part5FewShotExamples:
         {
             "part": 5,
             "questionCategory": "전치사/접속사/접속부사",
-            "questionSubType": "원인·결과",
+            "questionSubType": "원인/결과",
             "difficulty": "High",
             "questionText": "The shipment was delayed ___ a strike at the port.",
             "questionTranslation": "항구의 파업 ___ 배송이 지연되었다.",

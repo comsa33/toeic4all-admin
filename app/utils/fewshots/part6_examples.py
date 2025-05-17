@@ -817,7 +817,7 @@ class Part6FewShotExamples:
                         {"id": "D", "text": "Above all", "translation": "무엇보다도"},
                     ],
                     "answer": "A",
-                    "explanation": "원인·결과 관계: ‘기업가들이 많이 참여함에 따라 자금 증가’. ",
+                    "explanation": "원인/결과 관계: ‘기업가들이 많이 참여함에 따라 자금 증가’. ",
                 },
                 {
                     "blankNumber": 3,
