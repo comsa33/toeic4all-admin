@@ -1,11 +1,10 @@
 from typing import List, Union
 
-from models.part5_question import Part5Question
-from models.part6_question import Part6Set
-from models.part7_question import Part7Set
-
 from app.utils.db import db, part5_collection, part6_collection, part7_collection
 from app.utils.logger import logger
+from app.utils.models.part5_question import Part5Question
+from app.utils.models.part6_question import Part6Set
+from app.utils.models.part7_question import Part7Set
 
 # 컬렉션 매핑
 COLLECTION_MAPPING = {

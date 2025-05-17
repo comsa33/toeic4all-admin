@@ -1,6 +1,6 @@
 import json
 
-from fewshots.part5_examples import Part5FewShotExamples
+from app.utils.fewshots.part5_examples import Part5FewShotExamples
 
 SYSTEM_PROMPT_TEMPLATE = """You are an ETS-style TOEIC Part 5 item writer.
 
@@ -24,9 +24,9 @@ SYSTEM_PROMPT_TEMPLATE = """You are an ETS-style TOEIC Part 5 item writer.
 [OUTPUT SCHEMA]
 {{
   "part": 5,
-  "questionCategory": "<CATEGORY>",
-  "questionSubType":  "<SUBTYPE>",
-  "difficulty": "<DIFFICULTY>",
+  "questionCategory": "{category}",
+  "questionSubType":  "{subtype}",
+  "difficulty": "{difficulty}",
   "questionText": "<ENGLISH_SENTENCE_WITH___>",
   "questionTranslation": "<KOREAN_TRANSLATION>",
   "choices": [
