@@ -23,17 +23,8 @@ WORKDIR /app
 COPY pyproject.toml uv.lock /app/
 RUN uv sync --frozen --no-cache
 
-# 경량 사용자 추가 (보안)
-RUN groupadd -r toeic && useradd -r -g toeic toeic
-
-# 애플리케이션 파일 복사
-COPY --chown=toeic:toeic . .
-
 # 로그 디렉토리 생성
-RUN mkdir -p /app/logs && chown -R toeic:toeic /app/logs
-
-# 비권한 사용자로 전환
-USER toeic
+RUN mkdir -p /app/logs
 
 # 애플리케이션 포트 노출
 EXPOSE 8000
