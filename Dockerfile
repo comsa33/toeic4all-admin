@@ -10,9 +10,6 @@ ENV PYTHONUNBUFFERED=1 \
 
 # 시스템 패키지 설치
 RUN apt-get update -y && apt-get install -y --no-install-recommends \
-    python3.12 \
-    python3.12-dev \
-    python3-pip \
     gcc \
     && rm -rf /var/lib/apt/lists/*
 
@@ -40,9 +37,6 @@ USER toeic
 
 # 애플리케이션 포트 노출
 EXPOSE 8000
-
-# UltiMongo 사용을 위한 환경변수
-ENV ULTIMONGO_ASYNCIO_ENABLED=1
 
 # 건강 체크
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
