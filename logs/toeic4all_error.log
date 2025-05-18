@@ -1,4 +1,0 @@
-2025-05-18 09:32:27 - toeic4all - ERROR - Failed to initialize MongoDB connection: Unknown option: asyncio. Did you mean one of (fsync, password, maxstalenessseconds) or maybe a camelCase version of one? Refer to docstring.
-2025-05-18 09:35:45 - toeic4all - ERROR - Failed to initialize MongoDB connection: Unknown option: asyncio. Did you mean one of (fsync, password, maxstalenessseconds) or maybe a camelCase version of one? Refer to docstring.
-2025-05-18 09:38:29 - toeic4all - ERROR - Error in collection operation for part5_questions: 'coroutine' object has no attribute 'to_list'
-2025-05-18 09:38:29 - toeic4all - ERROR - Error getting Part 5 questions: 'coroutine' object has no attribute 'to_list'
