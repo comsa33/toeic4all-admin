@@ -17,14 +17,14 @@ class MongoDBConfig(BaseSettings):
 
     uri: str = Field(default_factory=lambda: settings.MONGODB_URI)
     database: str = Field(default_factory=lambda: settings.database_name)
-    max_pool_size: int = 50
+    max_pool_size: int = 100
     min_pool_size: int = 10
     max_idle_time_ms: int = 60000
     socket_timeout_ms: int = 300000
     connect_timeout_ms: int = 60000
-    server_selection_timeout_ms: int = 30000
+    server_selection_timeout_ms: int = 60000
     retry_writes: bool = True
-    wait_queue_timeout_ms: int = 30000
+    wait_queue_timeout_ms: int = 60000
     wait_queue_size: int = 1000
 
     @field_validator("uri")
