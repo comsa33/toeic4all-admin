@@ -1,0 +1,31 @@
+2025-05-18 09:32:27 - toeic4all - INFO - Starting application, connecting to MongoDB...
+2025-05-18 09:32:27 - toeic4all - ERROR - Failed to initialize MongoDB connection: Unknown option: asyncio. Did you mean one of (fsync, password, maxstalenessseconds) or maybe a camelCase version of one? Refer to docstring.
+2025-05-18 09:35:45 - toeic4all - INFO - Starting application, connecting to MongoDB...
+2025-05-18 09:35:45 - toeic4all - ERROR - Failed to initialize MongoDB connection: Unknown option: asyncio. Did you mean one of (fsync, password, maxstalenessseconds) or maybe a camelCase version of one? Refer to docstring.
+2025-05-18 09:36:31 - toeic4all - INFO - Starting application, connecting to MongoDB...
+2025-05-18 09:36:31 - toeic4all - INFO - MongoDB connection established to toeic4all
+2025-05-18 09:36:31 - toeic4all - INFO - MongoDB connection established
+2025-05-18 09:38:16 - toeic4all - INFO - Shutting down application, closing MongoDB connection...
+2025-05-18 09:38:16 - toeic4all - INFO - MongoDB connection closed
+2025-05-18 09:38:16 - toeic4all - INFO - MongoDB connection closed
+2025-05-18 09:38:17 - toeic4all - INFO - Starting application, connecting to MongoDB...
+2025-05-18 09:38:17 - toeic4all - INFO - MongoDB connection established to toeic4all
+2025-05-18 09:38:17 - toeic4all - INFO - MongoDB connection established
+2025-05-18 09:38:29 - toeic4all - ERROR - Error in collection operation for part5_questions: 'coroutine' object has no attribute 'to_list'
+2025-05-18 09:38:29 - toeic4all - ERROR - Error getting Part 5 questions: 'coroutine' object has no attribute 'to_list'
+2025-05-18 09:42:23 - toeic4all - INFO - Shutting down application, closing MongoDB connection...
+2025-05-18 09:42:23 - toeic4all - INFO - MongoDB connection closed
+2025-05-18 09:42:23 - toeic4all - INFO - MongoDB connection closed
+2025-05-18 09:42:24 - toeic4all - INFO - Starting application, connecting to MongoDB...
+2025-05-18 09:42:24 - toeic4all - INFO - MongoDB connection established to toeic4all
+2025-05-18 09:42:24 - toeic4all - INFO - MongoDB connection established
+2025-05-18 09:42:59 - toeic4all - INFO - Generating Part 6 sets: Notice, Medium, count=1
+2025-05-18 09:42:59 - toeic4all - INFO - Generating Part 6 sets: Notice, Medium, count=1
+2025-05-18 09:42:59 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-05-18 09:43:15 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-04-17:generateContent "HTTP/1.1 200 OK"
+2025-05-18 09:43:15 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-05-18 09:43:15 - toeic4all - INFO - Generated 1 Part 6 question sets
+2025-05-18 09:43:15 - toeic4all - INFO - Stored 1 Part 6 question sets in database
+2025-05-18 09:46:30 - toeic4all - INFO - Shutting down application, closing MongoDB connection...
+2025-05-18 09:46:30 - toeic4all - INFO - MongoDB connection closed
+2025-05-18 09:46:30 - toeic4all - INFO - MongoDB connection closed
