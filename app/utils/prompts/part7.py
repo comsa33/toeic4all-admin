@@ -38,6 +38,48 @@ SYSTEM_PROMPT = """You are an ETS-style TOEIC Part 7 item writer.
 • For multi-passage sets, ensure the passages are thematically linked and questions may require information from multiple passages (정보연계).
 • The 'type' field for each passage in the output must be one of the official PassageType values (e.g., "Email", "Article", "Notice"). Do not use unofficial types like "Reply Email" or "Inquiry Email"; use "Email" for these and let the content define their nature.
 
+
+[QUESTION TYPE EXAMPLES]
+• 주제/목적:
+    - What is the purpose of the notice?
+    - What is the main topic of the article?
+    - Why did the company send the email?
+
+• 세부사항:
+    - According to the memo, what will take place on March 12?
+    - What is included in the promotional package?
+    - When is the payment due?
+
+• 추론:
+    - What can be inferred about the sender?
+    - What is suggested about the product?
+    - What is implied about the store’s hours?
+
+• 어휘:
+    - What is closest in meaning to “promptly” in paragraph 2?
+    - The word “applicable” in paragraph 3 is closest in meaning to:
+    - What does the word “extend” most likely mean in the passage?
+
+• 참조:
+    - The word “it” in paragraph 1 refers to:
+    - In line 4, what does the word “they” refer to?
+    - What does “this” in paragraph 2 refer to?
+
+• 일치:
+    - Which of the following is NOT mentioned in the text?
+    - What is true about the conference?
+    - Which statement is NOT correct according to the article?
+
+• 정보연계 (Double/Triple sets only):
+    - What can be learned by comparing the schedule and the email?
+    - How are the article and the letter related?
+    - What is the connection between the memo and the form?
+
+• 문장삽입:
+    - Where would the following sentence best fit?
+    - In which of the positions marked [1]–[4] would the following sentence be best inserted?
+    - Where is the most appropriate place for the following sentence?
+
 [OUTPUT SCHEMA - A JSON array of Part7Set objects]
 Each Part7Set object:
 {{
@@ -112,13 +154,12 @@ _FEWSHOT_SINGLE = {
     "Notice": Part7SinglePassageFewShotExamples.notice,
     "Advertisement": Part7SinglePassageFewShotExamples.advertisement,
     "Article": Part7SinglePassageFewShotExamples.article,
-    "Form": getattr(Part7SinglePassageFewShotExamples, "form", []),
-    "Schedule": getattr(Part7SinglePassageFewShotExamples, "schedule", []),
-    "Receipt": getattr(Part7SinglePassageFewShotExamples, "receipt", []),
-    "Chart": getattr(Part7SinglePassageFewShotExamples, "chart", []),
-    "Chat": getattr(Part7SinglePassageFewShotExamples, "chat", []),
-    "Report": getattr(Part7SinglePassageFewShotExamples, "report", []),
-    "Other": getattr(Part7SinglePassageFewShotExamples, "other", []),
+    "Form": Part7SinglePassageFewShotExamples.form,
+    "Schedule": Part7SinglePassageFewShotExamples.schedule,
+    "Receipt": Part7SinglePassageFewShotExamples.receipt,
+    "Chart": Part7SinglePassageFewShotExamples.chart,
+    "Chat": Part7SinglePassageFewShotExamples.chat,
+    "Report": Part7SinglePassageFewShotExamples.report,
 }
 
 _FEWSHOT_DOUBLE = {
@@ -126,11 +167,13 @@ _FEWSHOT_DOUBLE = {
     # assuming the list elements are valid PassageType strings.
     # Example: if user wants Email + Reply Email, passage_types = ["Email", "Email"]
     ("Email", "Email"): Part7DoublePassageFewShotExamples.email_reply,
+    ("Email", "Notice"): Part7DoublePassageFewShotExamples.email_notice,
+    ("Letter", "Advertisement"): Part7DoublePassageFewShotExamples.letter_advertisement,
     ("Advertisement", "Email"): Part7DoublePassageFewShotExamples.advertisement_inquiry,
+    ("Memo", "Schedule"): Part7DoublePassageFewShotExamples.memo_schedule,
+    ("Article", "Chart"): Part7DoublePassageFewShotExamples.article_chart,
     ("Article", "Letter"): Part7DoublePassageFewShotExamples.article_letter,
     ("Form", "Notice"): Part7DoublePassageFewShotExamples.form_notice,
-    # Add other combinations as defined in Part7DoublePassageFewShotExamples
-    # e.g., ("Memo", "Form"): Part7DoublePassageFewShotExamples.memo_form,
 }
 
 _FEWSHOT_TRIPLE = {
@@ -140,8 +183,18 @@ _FEWSHOT_TRIPLE = {
         "Notice",
     ): Part7TriplePassageFewShotExamples.email_schedule_notice,
     ("Chat", "Article", "Form"): Part7TriplePassageFewShotExamples.chat_article_form,
-    # Add other combinations as defined in Part7TriplePassageFewShotExamples
-    # e.g., ("Email", "Memo", "Chart"): Part7TriplePassageFewShotExamples.email_memo_chart,
+    (
+        "Advertisement",
+        "Article",
+        "Form",
+    ): Part7TriplePassageFewShotExamples.advertisement_article_form,
+    ("Email", "Memo", "Chart"): Part7TriplePassageFewShotExamples.email_memo_chart,
+    (
+        "Letter",
+        "Advertisement",
+        "Receipt",
+    ): Part7TriplePassageFewShotExamples.letter_advertisement_receipt,
+    ("Email", "Chat", "Report"): Part7TriplePassageFewShotExamples.email_chat_report,
 }
 
 

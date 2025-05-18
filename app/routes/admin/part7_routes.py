@@ -96,32 +96,51 @@ async def generate_part7_questions(
 @router.get("/passage_types")
 async def get_part7_passage_types():
     """Part 7 지문 유형 목록을 반환합니다."""
-    passage_types = [
-        "Email",
-        "Letter",
-        "Memo",
-        "Notice",
-        "Advertisement",
-        "Article",
-        "Form",
-        "Schedule",
-        "Receipt",
-        "Chart",
-        "Chat",
-        "Report",
-        "Other",
-    ]
-    return passage_types
+    result = {
+        "single_passage_types": [
+            "Email",
+            "Letter",
+            "Memo",
+            "Notice",
+            "Advertisement",
+            "Article",
+            "Form",
+            "Schedule",
+            "Receipt",
+            "Chart",
+            "Chat",
+            "Report",
+        ],
+        "double_passage_types": [
+            ["Email", "Email"],
+            ["Email", "Notice"],
+            ["Letter", "Advertisement"],
+            ["Advertisement", "Email"],
+            ["Memo", "Schedule"],
+            ["Article", "Chart"],
+            ["Article", "Letter"],
+            ["Form", "Notice"],
+        ],
+        "triple_passage_types": [
+            ["Email", "Schedule", "Notice"],
+            ["Chart", "Article", "Form"],
+            ["Advertisement", "Article", "Form"],
+            ["Email", "Memo", "Chart"],
+            ["Letter", "Advertisement", "Receipt"],
+            ["Email", "Chat", "Report"],
+        ],
+    }
+    return result
 
 
 @router.get("/set_types")
 async def get_part7_set_types():
     """Part 7 문제 세트 유형 및 필수 지문 개수를 반환합니다."""
-    set_types = {
-        "Single": {"description": "단일 지문 세트", "required_passages": 1},
-        "Double": {"description": "이중 지문 세트", "required_passages": 2},
-        "Triple": {"description": "삼중 지문 세트", "required_passages": 3},
-    }
+    set_types = [
+        "Single",
+        "Double",
+        "Triple",
+    ]
     return set_types
 
 

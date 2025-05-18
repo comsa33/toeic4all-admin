@@ -1802,7 +1802,7 @@ class Part7DoublePassageFewShotExamples:
     ─ 대표 조합: Email+Reply, Advertisement+Inquiry Email, Article+Letter, Form+Notice 등 ─
     """
 
-    # 1) Email + Reply
+    # Email + Reply
     email_reply = [
         {
             "part": 7,
@@ -1991,7 +1991,452 @@ class Part7DoublePassageFewShotExamples:
         }
     ]
 
-    # 2) Advertisement + Inquiry Email
+    # Email + Notice
+    email_notice = [
+        {
+            "part": 7,
+            "difficulty": "Hard",
+            "questionSetType": "Double",
+            "passages": [
+                {
+                    "seq": 1,
+                    "type": "Email",
+                    "text": (
+                        "Subject: Mandatory Staff Training – Action Required\n\n"
+                        "Dear Team,\n\n"
+                        "This is a final reminder that all staff are required to attend the upcoming training session on our new integrated software system. The session will take place next Wednesday, March 15, from 10:00 a.m. to 12:00 p.m. in the main conference room. Attendance will be recorded at the door.\n\n"
+                        "The agenda includes a live demonstration, hands-on practice, and a Q&A segment. Please bring your company-issued laptop and ensure it is fully charged. If you are unable to attend due to an unavoidable conflict, notify HR by Monday, March 13, and provide documentation. Otherwise, absences will be reported to your department manager.\n\n"
+                        "If you have accessibility needs or require special assistance, reply to this email by Friday. Training materials will be distributed electronically after the session.\n\n"
+                        "Best regards,\n"
+                        "Sarah Kim\n"
+                        "HR Department"
+                    ),
+                    "translation": (
+                        "제목: 필수 직원 교육 – 조치 필요\n\n"
+                        "팀 여러분,\n\n"
+                        "신규 통합 소프트웨어 시스템 관련 교육 세션 참석이 전 직원에게 의무임을 최종 안내드립니다. 교육은 다음 주 수요일인 3월 15일 오전 10시부터 정오까지 메인 회의실에서 진행되며, 출입 시 출석이 체크됩니다.\n\n"
+                        "일정에는 실시간 시연, 실습, 질의응답이 포함됩니다. 회사 지급 노트북을 완전히 충전해 반드시 지참해 주시기 바랍니다. 부득이한 사유로 참석이 불가한 경우 3월 13일(월)까지 HR에 사유서와 증빙을 제출해야 하며, 그렇지 않은 결석은 부서장에게 보고됩니다.\n\n"
+                        "접근성 지원이나 특별 도움이 필요한 경우 금요일까지 본 메일로 회신해 주세요. 교육 자료는 세션 종료 후 전자 파일로 배포됩니다.\n\n"
+                        "감사합니다.\n"
+                        "인사부 Sarah Kim"
+                    ),
+                },
+                {
+                    "seq": 2,
+                    "type": "Notice",
+                    "text": (
+                        "**Notice: Mandatory Staff Training Session**\n\n"
+                        "**Date:** March 15, 2025 (Wednesday)\n"
+                        "**Time:** 10:00 a.m. – 12:00 p.m.\n"
+                        "**Location:** Main Conference Room\n"
+                        "**Topic:** Integrated Software System – Demo & Practice\n"
+                        "**Required:** All staff (attendance will be checked)\n"
+                        "**What to bring:** Company laptop (fully charged)\n"
+                        "**Absence:** Notify HR by March 13 with documentation\n"
+                        "**Special Assistance:** Request by March 10\n"
+                        "**Note:** Training materials will be sent by email after the session."
+                    ),
+                    "translation": (
+                        "**공지: 필수 직원 교육 세션**\n\n"
+                        "**일자:** 2025년 3월 15일(수)\n"
+                        "**시간:** 오전 10시 – 정오\n"
+                        "**장소:** 메인 회의실\n"
+                        "**주제:** 통합 소프트웨어 시스템 – 시연 및 실습\n"
+                        "**대상:** 전 직원 (출석 체크)\n"
+                        "**지참물:** 회사 노트북(완충)\n"
+                        "**결석:** 3월 13일까지 HR에 증빙 제출\n"
+                        "**특별 지원:** 3월 10일까지 요청\n"
+                        "**비고:** 교육 자료는 세션 후 이메일로 발송"
+                    ),
+                },
+            ],
+            "questions": [
+                {
+                    "questionSeq": 1,
+                    "questionType": "세부사항",
+                    "questionText": "What must staff bring to the training session?",
+                    "questionTranslation": "직원들은 교육 세션에 무엇을 반드시 지참해야 합니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "Company laptop (fully charged)",
+                            "translation": "회사 노트북(완충)",
+                        },
+                        {
+                            "id": "B",
+                            "text": "Printed training materials",
+                            "translation": "인쇄된 교육 자료",
+                        },
+                        {
+                            "id": "C",
+                            "text": "Employee handbook",
+                            "translation": "사원 안내서",
+                        },
+                        {"id": "D", "text": "ID badge only", "translation": "신분증만"},
+                    ],
+                    "answer": "A",
+                    "explanation": "이메일과 공지 모두 노트북 완충 지참 명시.",
+                },
+                {
+                    "questionSeq": 2,
+                    "questionType": "세부사항",
+                    "questionText": "What should an employee do if they cannot attend the training?",
+                    "questionTranslation": "교육에 참석할 수 없는 직원은 어떻게 해야 합니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "Notify HR by March 13 with documentation",
+                            "translation": "3월 13일까지 HR에 증빙 제출",
+                        },
+                        {
+                            "id": "B",
+                            "text": "Tell their manager on the day",
+                            "translation": "당일 부서장에게 알린다",
+                        },
+                        {
+                            "id": "C",
+                            "text": "Do nothing",
+                            "translation": "별도 조치 불필요",
+                        },
+                        {
+                            "id": "D",
+                            "text": "Send an email after the session",
+                            "translation": "세션 후 이메일",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": "이메일과 공지 모두 3월 13일까지 HR에 증빙 제출 명시.",
+                },
+                {
+                    "questionSeq": 3,
+                    "questionType": "세부사항",
+                    "questionText": "What will happen if an employee is absent without notifying HR?",
+                    "questionTranslation": "HR에 알리지 않고 결석하면 어떻게 됩니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "Absence will be reported to the department manager",
+                            "translation": "결석이 부서장에게 보고된다",
+                        },
+                        {
+                            "id": "B",
+                            "text": "They can attend a make-up session",
+                            "translation": "보강 수업을 들을 수 있다",
+                        },
+                        {
+                            "id": "C",
+                            "text": "No consequences",
+                            "translation": "불이익 없음",
+                        },
+                        {
+                            "id": "D",
+                            "text": "They will receive training materials only",
+                            "translation": "교육 자료만 받는다",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": "이메일에 결석 시 부서장에게 보고된다고 명시.",
+                },
+                {
+                    "questionSeq": 4,
+                    "questionType": "정보연계",
+                    "questionText": "If an employee needs wheelchair access, by when must they request special assistance, and how should they do it?",
+                    "questionTranslation": "직원이 휠체어 접근 등 특별 지원이 필요할 경우 언제까지, 어떻게 요청해야 합니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "By March 10, by replying to the email",
+                            "translation": "3월 10일까지 이메일 회신",
+                        },
+                        {
+                            "id": "B",
+                            "text": "On the day of the session, at the door",
+                            "translation": "당일 현장 요청",
+                        },
+                        {
+                            "id": "C",
+                            "text": "By March 15, by phone",
+                            "translation": "3월 15일까지 전화",
+                        },
+                        {
+                            "id": "D",
+                            "text": "No request is needed",
+                            "translation": "요청 불필요",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": "공지에 3월 10일까지, 이메일에 회신으로 요청 명시.",
+                },
+                {
+                    "questionSeq": 5,
+                    "questionType": "정보연계",
+                    "questionText": (
+                        "Based on both the email and the notice, what will staff receive after the training session, and how will it be delivered?"
+                    ),
+                    "questionTranslation": (
+                        "이메일과 공지를 종합할 때, 교육 세션 후 직원들은 무엇을 어떤 방식으로 받게 됩니까?"
+                    ),
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "Training materials by email",
+                            "translation": "교육 자료를 이메일로 받는다",
+                        },
+                        {
+                            "id": "B",
+                            "text": "Printed certificates in person",
+                            "translation": "현장에서 인쇄된 수료증",
+                        },
+                        {
+                            "id": "C",
+                            "text": "Gift cards by mail",
+                            "translation": "우편으로 상품권",
+                        },
+                        {
+                            "id": "D",
+                            "text": "No materials will be provided",
+                            "translation": "자료 제공 없음",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": "이메일과 공지 모두 교육 자료가 세션 후 이메일로 발송된다고 명시.",
+                },
+            ],
+        },
+    ]
+
+    # Letter + Advertisement
+    letter_advertisement = [
+        {
+            "part": 7,
+            "difficulty": "Hard",
+            "questionSetType": "Double",
+            "passages": [
+                {
+                    "seq": 1,
+                    "type": "Letter",
+                    "text": (
+                        "April 8, 2025\n\n"
+                        "Dear Ms. Lee,\n\n"
+                        "I hope this message finds you well. I am writing to express my sincere gratitude for your invaluable support during the recent project. Your expertise and dedication were instrumental in helping us meet our deadlines, and I truly appreciate the extra hours you devoted to the team.\n\n"
+                        "As a token of my appreciation, I would like to invite you to a small gathering at my home next Saturday, April 15, at 6 p.m. It will be a relaxed evening with dinner and refreshments, and I hope we can enjoy some time together outside of work. Please let me know if you are able to attend, and feel free to bring a guest if you wish.\n\n"
+                        "Looking forward to your reply.\n\n"
+                        "Best regards,\n"
+                        "Soo Jin Park"
+                    ),
+                    "translation": (
+                        "2025년 4월 8일\n\n"
+                        "이미나님께,\n\n"
+                        "안녕하세요. 최근 프로젝트에서 귀하의 소중한 지원에 진심으로 감사드립니다. "
+                        "귀하의 전문성과 헌신 덕분에 기한을 맞출 수 있었고, 팀을 위해 추가 근무까지 해주신 점 깊이 감사드립니다.\n\n"
+                        "감사의 뜻으로 다음 주 토요일(4월 15일) 오후 6시에 저희 집에서 작은 모임을 갖고자 합니다. "
+                        "편안한 저녁 식사와 다과가 준비될 예정이며, 업무 외적으로도 좋은 시간을 보내면 좋겠습니다. "
+                        "참석 가능 여부를 알려주시고, 동반인이 있으시면 함께 오셔도 좋습니다.\n\n"
+                        "답변 기다리겠습니다.\n\n"
+                        "감사합니다.\n박수진"
+                    ),
+                },
+                {
+                    "seq": 2,
+                    "type": "Advertisement",
+                    "text": (
+                        "**Spring Garden Party – Celebrate the Season!**\n\n"
+                        "**Date:** April 15, 2025 (Saturday)\n"
+                        "**Time:** 4:00 p.m. – 8:00 p.m.\n"
+                        "**Location:** Central Park Pavilion\n"
+                        "**Join us for an afternoon of fun, food, and festivities!**\n"
+                        "- Live music and entertainment\n"
+                        "- Food trucks featuring local cuisine\n"
+                        "- Games and activities for all ages\n"
+                        "- Free entry with RSVP by April 10\n"
+                        "**To RSVP:** Email springgardenparty@example.com\n"
+                        "**Follow us on social media for updates:** @springgardenparty\n"
+                        "**Contact:** (555) 123-4567\n\n"
+                        "Note: Parking is limited. Guests are encouraged to use public transportation or carpool. In case of rain, the event will be moved indoors to the Community Hall.\n\n"
+                        "We look forward to celebrating the arrival of spring with you!"
+                    ),
+                    "translation": (
+                        "**봄 정원 파티 – 계절을 함께 즐기세요!**\n\n"
+                        "**일자:** 2025년 4월 15일(토)\n"
+                        "**시간:** 오후 4시 – 8시\n"
+                        "**장소:** 센트럴 파크 파빌리온\n"
+                        "**즐거운 오후, 음식, 축제를 함께하세요!**\n"
+                        "- 라이브 음악과 공연\n"
+                        "- 지역 요리를 제공하는 푸드 트럭\n"
+                        "- 모든 연령대가 즐길 수 있는 게임과 활동\n"
+                        "- 4월 10일까지 RSVP 시 무료 입장\n"
+                        "**RSVP 방법:** 이메일 springgardenparty@example.com으로 회신\n"
+                        "**소셜 미디어 업데이트 팔로우:** @springgardenparty\n"
+                        "**연락처:** (555) 123-4567\n\n"
+                        "참고: 주차 공간이 제한되어 있으니 대중교통 또는 카풀 이용을 권장합니다. 우천 시 행사는 커뮤니티홀 실내로 이동합니다.\n\n"
+                        "봄의 도래를 함께 축하할 수 있기를 기대합니다!"
+                    ),
+                },
+            ],
+            "questions": [
+                {
+                    "questionSeq": 1,
+                    "questionType": "주제/목적",
+                    "questionText": "What is the main purpose of Ms. Park's letter to Ms. Lee?",
+                    "questionTranslation": "박수진이 이미나에게 보낸 편지의 주된 목적은 무엇입니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "To express gratitude and invite her to a gathering",
+                            "translation": "감사 인사와 모임 초대",
+                        },
+                        {
+                            "id": "B",
+                            "text": "To request assistance with a new project",
+                            "translation": "새 프로젝트 지원 요청",
+                        },
+                        {
+                            "id": "C",
+                            "text": "To announce a company event",
+                            "translation": "회사 행사 안내",
+                        },
+                        {
+                            "id": "D",
+                            "text": "To offer a job opportunity",
+                            "translation": "채용 제안",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": "편지에서 감사 인사와 함께 사적인 모임 초대가 주 목적임.",
+                },
+                {
+                    "questionSeq": 2,
+                    "questionType": "세부사항",
+                    "questionText": "According to the advertisement, what should guests do to receive free entry to the Spring Garden Party?",
+                    "questionTranslation": "광고에 따르면 봄 정원 파티 무료 입장을 위해 손님이 해야 할 일은 무엇입니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "RSVP by April 10 via email",
+                            "translation": "4월 10일까지 이메일로 RSVP",
+                        },
+                        {
+                            "id": "B",
+                            "text": "Purchase a ticket at the entrance",
+                            "translation": "입구에서 티켓 구매",
+                        },
+                        {
+                            "id": "C",
+                            "text": "Follow on social media",
+                            "translation": "SNS 팔로우",
+                        },
+                        {
+                            "id": "D",
+                            "text": "Arrive before 5 p.m.",
+                            "translation": "오후 5시 이전 도착",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": "광고에 4월 10일까지 RSVP 시 무료 입장 명시.",
+                },
+                {
+                    "questionSeq": 3,
+                    "questionType": "세부사항",
+                    "questionText": "What information is provided about the Spring Garden Party in case of bad weather?",
+                    "questionTranslation": "봄 정원 파티가 악천후일 경우에 대한 안내는 무엇입니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "The event will be moved indoors to the Community Hall.",
+                            "translation": "행사는 커뮤니티홀 실내로 이동한다.",
+                        },
+                        {
+                            "id": "B",
+                            "text": "The event will be postponed to the next day.",
+                            "translation": "행사가 다음 날로 연기된다.",
+                        },
+                        {
+                            "id": "C",
+                            "text": "The event will be canceled.",
+                            "translation": "행사가 취소된다.",
+                        },
+                        {
+                            "id": "D",
+                            "text": "Guests will receive a refund.",
+                            "translation": "환불이 제공된다.",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": "광고 하단에 우천 시 실내로 이동한다고 안내.",
+                },
+                {
+                    "questionSeq": 4,
+                    "questionType": "정보연계",
+                    "questionText": (
+                        "Both the letter and the advertisement mention gatherings on April 15. If Ms. Lee wants to attend both Ms. Park's gathering and the Spring Garden Party, what potential conflict might she face, and what could she do to participate in both?"
+                    ),
+                    "questionTranslation": (
+                        "편지와 광고 모두 4월 15일 모임을 언급합니다. 이미나가 두 행사(박수진의 모임과 봄 정원 파티)에 모두 참석하고 싶다면 어떤 일정 충돌이 발생할 수 있으며, 두 행사에 모두 참여하려면 어떻게 해야 합니까?"
+                    ),
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "The events overlap in the evening; she could attend the Garden Party first and then go to Ms. Park's gathering at 6 p.m.",
+                            "translation": "저녁 시간대가 겹치므로, 파티에 먼저 들렀다가 6시에 박수진의 모임에 참석할 수 있다.",
+                        },
+                        {
+                            "id": "B",
+                            "text": "She must choose only one event, as both start at the same time.",
+                            "translation": "두 행사가 동시에 시작하므로 하나만 선택해야 한다.",
+                        },
+                        {
+                            "id": "C",
+                            "text": "She can attend both fully, as there is no time conflict.",
+                            "translation": "시간이 겹치지 않아 모두 참석할 수 있다.",
+                        },
+                        {
+                            "id": "D",
+                            "text": "She can only attend the Garden Party if she brings Ms. Park as a guest.",
+                            "translation": "박수진을 동반해야만 파티 참석 가능하다.",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": "정원 파티(4~8시)와 박수진 모임(6시) 시간이 일부 겹치므로, 파티에 먼저 참석 후 모임에 이동 가능.",
+                },
+                {
+                    "questionSeq": 5,
+                    "questionType": "정보연계",
+                    "questionText": (
+                        "Based on both passages, what should Ms. Lee consider regarding transportation and RSVP if she plans to attend the Spring Garden Party?"
+                    ),
+                    "questionTranslation": (
+                        "두 지문을 종합할 때, 이미나가 봄 정원 파티에 참석하려면 교통과 RSVP 측면에서 무엇을 고려해야 합니까?"
+                    ),
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "She should RSVP by April 10 and use public transportation or carpool due to limited parking.",
+                            "translation": "4월 10일까지 RSVP하고, 주차가 제한적이므로 대중교통/카풀을 이용해야 한다.",
+                        },
+                        {
+                            "id": "B",
+                            "text": "She can RSVP on the day and park freely at the venue.",
+                            "translation": "당일 RSVP 및 자유 주차 가능하다.",
+                        },
+                        {
+                            "id": "C",
+                            "text": "No RSVP is needed, but she must arrive by taxi.",
+                            "translation": "RSVP 불필요, 택시 이용 필수.",
+                        },
+                        {
+                            "id": "D",
+                            "text": "She must RSVP by April 15 and arrange a shuttle bus.",
+                            "translation": "4월 15일까지 RSVP 및 셔틀버스 예약 필요.",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": "광고에 4월 10일까지 RSVP, 주차 제한 및 대중교통/카풀 권장 명시.",
+                },
+            ],
+        },
+    ]
+
+    # Advertisement + Inquiry Email
     advertisement_inquiry = [
         {
             "part": 7,
@@ -2198,7 +2643,447 @@ class Part7DoublePassageFewShotExamples:
         }
     ]
 
-    # 3) Article + Letter
+    # Memo + Schedule
+    memo_schedule = [
+        {
+            "part": 7,
+            "difficulty": "Hard",
+            "questionSetType": "Double",
+            "passages": [
+                {
+                    "seq": 1,
+                    "type": "Memo",
+                    "text": (
+                        "MEMORANDUM\n\n"
+                        "To: All Staff\n"
+                        "From: HR Department\n"
+                        "Date: March 1, 2025\n"
+                        "Subject: Mandatory Training – Effective Communication Skills\n\n"
+                        "This is to inform you that all employees are required to attend a training session on 'Effective Communication Skills' scheduled for March 20, 2025, from 10:00 a.m. to 12:00 p.m. in the Main Conference Room. "
+                        "The session will be led by Dr. Jane Smith, an internationally recognized expert in workplace communication. The training will cover advanced topics such as conflict resolution, cross-departmental collaboration, and strategies for virtual meetings.\n\n"
+                        "Attendance will be recorded at the entrance. If you are unable to attend due to unavoidable circumstances, notify HR by March 10 with supporting documentation. "
+                        "Employees who require wheelchair access, sign language interpretation, or other special assistance should also inform HR by March 10. "
+                        "Training materials will be distributed electronically after the session. For questions, contact hr@company.com.\n\n"
+                        "Thank you for your cooperation.\n"
+                        "HR Department"
+                    ),
+                    "translation": (
+                        "메모\n\n"
+                        "수신: 전 직원\n"
+                        "발신: 인사부\n"
+                        "날짜: 2025년 3월 1일\n"
+                        "제목: 필수 교육 – 효과적인 커뮤니케이션 스킬\n\n"
+                        "전 직원 필수 참석 교육 '효과적인 커뮤니케이션 스킬'이 2025년 3월 20일 오전 10시부터 정오까지 메인 회의실에서 진행됩니다. "
+                        "이번 세션은 직장 내 커뮤니케이션 분야의 세계적 전문가인 제인 스미스 박사가 진행하며, 갈등 해결, 부서 간 협업, 비대면 회의 전략 등 고급 주제를 다룹니다.\n\n"
+                        "입장 시 출석이 체크됩니다. 부득이한 사유로 참석이 불가한 경우 3월 10일까지 증빙과 함께 인사부에 알려주시기 바랍니다. "
+                        "휠체어 접근, 수화 통역 등 특별 지원이 필요한 경우도 3월 10일까지 인사부로 요청해 주십시오. "
+                        "교육 자료는 세션 후 전자 파일로 배포됩니다. 문의: hr@company.com\n\n"
+                        "협조에 감사드립니다.\n"
+                        "인사부"
+                    ),
+                },
+                {
+                    "seq": 2,
+                    "type": "Schedule",
+                    "text": (
+                        "**March 20, 2025 – Training Day Schedule**\n\n"
+                        "09:40–10:00  Registration & Coffee (Lobby)\n"
+                        "10:00–10:15  Opening Remarks & Attendance (Main Conference Room)\n"
+                        "10:15–11:00  Session 1: Conflict Resolution Techniques\n"
+                        "11:00–11:10  Break\n"
+                        "11:10–11:40  Session 2: Cross-Departmental Collaboration\n"
+                        "11:40–12:00  Session 3: Virtual Meeting Strategies & Q&A\n"
+                        "12:00         End of Training\n"
+                        "Note: Employees who require special assistance should check in at the help desk in the lobby before 10:00 a.m."
+                    ),
+                    "translation": (
+                        "**2025년 3월 20일 – 교육 일정표**\n\n"
+                        "09:40–10:00  등록 및 커피 (로비)\n"
+                        "10:00–10:15  개회사 및 출석 체크 (메인 회의실)\n"
+                        "10:15–11:00  세션 1: 갈등 해결 기법\n"
+                        "11:00–11:10  휴식\n"
+                        "11:10–11:40  세션 2: 부서 간 협업\n"
+                        "11:40–12:00  세션 3: 비대면 회의 전략 및 질의응답\n"
+                        "12:00         교육 종료\n"
+                        "참고: 특별 지원이 필요한 직원은 오전 10시 전까지 로비 안내 데스크에서 체크인 바랍니다."
+                    ),
+                },
+            ],
+            "questions": [
+                {
+                    "questionSeq": 1,
+                    "questionType": "세부사항",
+                    "questionText": "According to the memo, what should employees do if they cannot attend the training session?",
+                    "questionTranslation": "메모에 따르면 교육에 참석할 수 없는 직원은 어떻게 해야 합니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "Notify HR by March 10 with documentation",
+                            "translation": "3월 10일까지 증빙과 함께 인사부에 알린다",
+                        },
+                        {
+                            "id": "B",
+                            "text": "Send an email after the session",
+                            "translation": "교육 후 이메일을 보낸다",
+                        },
+                        {
+                            "id": "C",
+                            "text": "No action is needed",
+                            "translation": "별도 조치 불필요",
+                        },
+                        {
+                            "id": "D",
+                            "text": "Ask a colleague to sign in for them",
+                            "translation": "동료에게 출석 체크를 부탁한다",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": "메모에 부득이한 사유 시 3월 10일까지 증빙과 함께 HR에 알려야 한다고 명시되어 있음.",
+                },
+                {
+                    "questionSeq": 2,
+                    "questionType": "세부사항",
+                    "questionText": "What is the topic of Session 2 in the training schedule?",
+                    "questionTranslation": "교육 일정표의 세션 2 주제는 무엇입니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "Conflict Resolution Techniques",
+                            "translation": "갈등 해결 기법",
+                        },
+                        {
+                            "id": "B",
+                            "text": "Cross-Departmental Collaboration",
+                            "translation": "부서 간 협업",
+                        },
+                        {
+                            "id": "C",
+                            "text": "Virtual Meeting Strategies",
+                            "translation": "비대면 회의 전략",
+                        },
+                        {"id": "D", "text": "Opening Remarks", "translation": "개회사"},
+                    ],
+                    "answer": "B",
+                    "explanation": "일정표에 세션 2는 'Cross-Departmental Collaboration'임.",
+                },
+                {
+                    "questionSeq": 3,
+                    "questionType": "세부사항",
+                    "questionText": "By what time should employees requiring special assistance check in, and where?",
+                    "questionTranslation": "특별 지원이 필요한 직원은 언제, 어디에서 체크인해야 합니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "Before 10:00 a.m. at the help desk in the lobby",
+                            "translation": "오전 10시 전 로비 안내 데스크",
+                        },
+                        {
+                            "id": "B",
+                            "text": "After the session at the HR office",
+                            "translation": "교육 후 인사부 사무실",
+                        },
+                        {
+                            "id": "C",
+                            "text": "During the break in the conference room",
+                            "translation": "휴식 시간 회의실",
+                        },
+                        {
+                            "id": "D",
+                            "text": "No check-in is required",
+                            "translation": "체크인 불필요",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": "일정표 하단에 오전 10시 전 로비 안내 데스크에서 체크인하라고 명시.",
+                },
+                {
+                    "questionSeq": 4,
+                    "questionType": "정보연계",
+                    "questionText": (
+                        "If an employee notifies HR about their need for sign language interpretation on March 12, will their request be accommodated? Use both passages to support your answer."
+                    ),
+                    "questionTranslation": (
+                        "직원이 3월 12일에 수화 통역 지원을 요청하면 지원을 받을 수 있습니까? 두 지문을 근거로 답하세요."
+                    ),
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "No, because the deadline for special assistance requests is March 10.",
+                            "translation": "아니오, 특별 지원 요청 마감이 3월 10일이기 때문",
+                        },
+                        {
+                            "id": "B",
+                            "text": "Yes, as long as they check in at the help desk.",
+                            "translation": "예, 안내 데스크에서 체크인하면 가능",
+                        },
+                        {
+                            "id": "C",
+                            "text": "Yes, if they email Dr. Jane Smith directly.",
+                            "translation": "예, 강사에게 직접 이메일하면 가능",
+                        },
+                        {
+                            "id": "D",
+                            "text": "No, only wheelchair access is available.",
+                            "translation": "아니오, 휠체어 접근만 지원됨",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": "메모와 일정표 모두 특별 지원 요청은 3월 10일까지 해야 한다고 명시.",
+                },
+                {
+                    "questionSeq": 5,
+                    "questionType": "정보연계",
+                    "questionText": (
+                        "Based on both the memo and the schedule, what must all employees do to ensure their attendance is recorded and they receive training materials?"
+                    ),
+                    "questionTranslation": (
+                        "메모와 일정표를 종합할 때, 모든 직원이 출석 체크와 교육 자료 수령을 위해 반드시 해야 하는 것은 무엇입니까?"
+                    ),
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "Arrive before 10:00 a.m. for registration and attend the full session",
+                            "translation": "오전 10시 전 등록, 전체 세션 참석",
+                        },
+                        {
+                            "id": "B",
+                            "text": "Send an email after the session",
+                            "translation": "교육 후 이메일 발송",
+                        },
+                        {
+                            "id": "C",
+                            "text": "Only attend the opening remarks",
+                            "translation": "개회사만 참석",
+                        },
+                        {
+                            "id": "D",
+                            "text": "Collect materials from the HR office before the session",
+                            "translation": "교육 전 인사부에서 자료 수령",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": "일정표에 10시 전 등록, 메모에 출석 체크 및 전자 자료 배포 명시.",
+                },
+            ],
+        }
+    ]
+
+    # Article + Chart
+    article_chart = [
+        {
+            "part": 7,
+            "difficulty": "Hard",
+            "questionSetType": "Double",
+            "passages": [
+                {
+                    "seq": 1,
+                    "type": "Article",
+                    "text": (
+                        "**New Study on Urban Air Quality**\n\n"
+                        "A recent study conducted by the Environmental Research Institute has revealed alarming levels of air pollution in major urban areas. "
+                        "The study analyzed data from over 100 cities worldwide and found that nearly 90% of the population is exposed to air quality levels that exceed the World Health Organization's recommended limits.\n\n"
+                        "The report highlights that traffic emissions, industrial activities, and construction work are the primary contributors to poor air quality. "
+                        "In response, city officials are urged to implement stricter regulations on vehicle emissions and promote public transportation. "
+                        "The study also emphasizes the importance of green spaces in urban planning to improve air quality and public health.\n\n"
+                        "For more information, visit www.environmentalresearch.org."
+                    ),
+                    "translation": (
+                        "**도시 대기질에 대한 새로운 연구**\n\n"
+                        "환경 연구소의 최근 연구에 따르면 주요 도시 지역에서 심각한 대기 오염 수준이 발견되었습니다. "
+                        "이 연구는 전 세계 100개 이상의 도시 데이터를 분석했으며, 인구의 거의 90%가 세계 보건 기구의 권장 기준을 초과하는 대기질에 노출되어 있음을 발견했습니다.\n\n"
+                        "보고서는 교통 배출가스, 산업 활동 및 건설 작업이 대기질 저하의 주요 원인이라고 강조합니다. "
+                        "이에 따라 도시 관계자들은 차량 배출가스에 대한 규제를 강화하고 대중교통을 촉진할 것을 촉구받고 있습니다. "
+                        "또한 연구는 도시 계획에서 녹지 공간의 중요성을 강조하여 대기질과 공공 건강을 개선해야 한다고 언급합니다.\n\n"
+                        "자세한 내용은 www.environmentalresearch.org를 방문하세요."
+                    ),
+                },
+                {
+                    "seq": 2,
+                    "type": "Chart",
+                    "text": (
+                        "**Air Quality Index (AQI) Levels**\n\n"
+                        "| AQI Level | Description         | Health Effects               |\n"
+                        "|------------|---------------------|------------------------------|\n"
+                        "| 0-50      | Good                | No health effects            |\n"
+                        "| 51-100    | Moderate            | Some pollutants may be a concern for a small number of people |\n"
+                        "| 101-150   | Unhealthy for Sensitive Groups | People with respiratory or heart conditions may experience health effects |\n"
+                        "| 151-200   | Unhealthy           | Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects |\n"
+                        "| 201-300   | Very Unhealthy      | Health alert: everyone may experience more serious health effects |\n"
+                        "| 301-500   | Hazardous           | Health warnings of emergency conditions; the entire population is more likely to be affected |\n"
+                        "\n"
+                        "Note: The AQI is a measure of air quality and indicates how polluted the air currently is or how polluted it is forecast to become."
+                    ),
+                    "translation": (
+                        "**대기질 지수(AQI) 수준**\n\n"
+                        "| AQI 수준 | 설명               | 건강 영향                   |\n"
+                        "|----------|-------------------|----------------------------|\n"
+                        "| 0-50    | 좋음              | 건강 영향 없음             |\n"
+                        "| 51-100  | 보통              | 일부 오염물질이 소수에게 우려될 수 있음 |\n"
+                        "| 101-150 | 민감군에 대한 건강 위험 | 호흡기 또는 심장 질환이 있는 사람은 건강 영향 경험 |\n"
+                        "| 151-200 | 나쁨              | 모든 사람이 건강 영향을 경험할 수 있으며, 민감군은 더 심각한 건강 영향을 경험할 수 있음 |\n"
+                        "| 201-300 | 매우 나쁨         | 건강 경고: 모든 사람이 더 심각한 건강 영향을 경험할 수 있음 |\n"
+                        "| 301-500 | 위험              | 응급 상황에 대한 건강 경고; 전체 인구가 영향을 받을 가능성이 높음 |\n"
+                        "\n"
+                        "참고: AQI는 대기질 측정 지표로, 현재 대기 오염 정도 또는 예측되는 오염 정도를 나타냅니다."
+                    ),
+                },
+            ],
+            "questions": [
+                {
+                    "questionSeq": 1,
+                    "questionType": "세부사항",
+                    "questionText": "According to the article, what are the primary contributors to poor air quality in urban areas?",
+                    "questionTranslation": "기사에 따르면 도시 지역 대기질 저하의 주요 원인은 무엇입니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "Traffic emissions, industrial activities, and construction work",
+                            "translation": "교통 배출가스, 산업 활동 및 건설 작업",
+                        },
+                        {
+                            "id": "B",
+                            "text": "Household waste and agricultural practices",
+                            "translation": "가정 쓰레기 및 농업 관행",
+                        },
+                        {
+                            "id": "C",
+                            "text": "Natural disasters and climate change",
+                            "translation": "자연 재해 및 기후 변화",
+                        },
+                        {
+                            "id": "D",
+                            "text": "Public transportation and green spaces",
+                            "translation": "대중교통 및 녹지 공간",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": "기사에 교통 배출가스, 산업 활동 및 건설 작업이 주요 원인으로 언급됨.",
+                },
+                {
+                    "questionSeq": 2,
+                    "questionType": "세부사항",
+                    "questionText": (
+                        "What is the AQI level for air quality that is considered 'Unhealthy' according to the chart?"
+                    ),
+                    "questionTranslation": (
+                        "'나쁨'으로 간주되는 대기질 AQI 수준은 차트에서 몇입니까?"
+                    ),
+                    "choices": [
+                        {"id": "A", "text": "0-50", "translation": "0-50"},
+                        {"id": "B", "text": "51-100", "translation": "51-100"},
+                        {"id": "C", "text": "101-150", "translation": "101-150"},
+                        {"id": "D", "text": "151-200", "translation": "151-200"},
+                    ],
+                    "answer": "D",
+                    "explanation": "차트에 '나쁨'은 AQI 151-200으로 명시됨.",
+                },
+                {
+                    "questionSeq": 3,
+                    "questionType": "세부사항",
+                    "questionText": (
+                        "'Very Unhealthy' AQI level indicates what kind of health alert according to the chart?"
+                    ),
+                    "questionTranslation": (
+                        "'매우 나쁨' AQI 수준은 차트에 따라 어떤 건강 경고를 나타냅니까?"
+                    ),
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "Health alert: everyone may experience more serious health effects",
+                            "translation": "건강 경고: 모든 사람이 더 심각한 건강 영향을 경험할 수 있음",
+                        },
+                        {
+                            "id": "B",
+                            "text": "No health effects",
+                            "translation": "건강 영향 없음",
+                        },
+                        {
+                            "id": "C",
+                            "text": "Health warnings of emergency conditions",
+                            "translation": "응급 상황에 대한 건강 경고",
+                        },
+                        {
+                            "id": "D",
+                            "text": "Some pollutants may be a concern for a small number of people",
+                            "translation": "일부 오염물질이 소수에게 우려될 수 있음",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": "차트에 '매우 나쁨'은 건강 경고: 모든 사람이 더 심각한 건강 영향을 경험할 수 있다고 명시됨.",
+                },
+                {
+                    "questionSeq": 4,
+                    "questionType": "정보연계",
+                    "questionText": (
+                        "Based on the article and chart, what action is recommended for city officials to improve air quality?"
+                    ),
+                    "questionTranslation": (
+                        "기사와 차트를 종합할 때, 도시 관계자에게 대기질 개선을 위해 권장되는 조치는 무엇입니까?"
+                    ),
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "Implement stricter regulations on vehicle emissions",
+                            "translation": "차량 배출가스에 대한 규제를 강화한다",
+                        },
+                        {
+                            "id": "B",
+                            "text": "Increase the number of vehicles on the road",
+                            "translation": "도로 위 차량 수를 늘린다",
+                        },
+                        {
+                            "id": "C",
+                            "text": "Reduce public transportation options",
+                            "translation": "대중교통 옵션을 줄인다",
+                        },
+                        {
+                            "id": "D",
+                            "text": "Limit green spaces in urban planning",
+                            "translation": "도시 계획에서 녹지 공간을 제한한다",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": "기사에 차량 배출가스 규제 강화를 권장한다고 명시됨.",
+                },
+                {
+                    "questionSeq": 5,
+                    "questionType": "정보연계",
+                    "questionText": (
+                        "'Good' AQI level indicates what kind of health effects according to the chart?"
+                    ),
+                    "questionTranslation": (
+                        "'좋음' AQI 수준은 차트에 따라 어떤 건강 영향을 나타냅니까?"
+                    ),
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "No health effects",
+                            "translation": "건강 영향 없음",
+                        },
+                        {
+                            "id": "B",
+                            "text": "Some pollutants may be a concern for a small number of people",
+                            "translation": "일부 오염물질이 소수에게 우려될 수 있음",
+                        },
+                        {
+                            "id": "C",
+                            "text": "Everyone may begin to experience health effects",
+                            "translation": "모든 사람이 건강 영향을 경험할 수 있음",
+                        },
+                        {
+                            "id": "D",
+                            "text": "Health warnings of emergency conditions",
+                            "translation": "응급 상황에 대한 건강 경고",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": "차트에 '좋음'은 건강 영향 없음으로 명시됨.",
+                },
+            ],
+        }
+    ]
+
+    # Article + Letter
     article_letter = [
         {
             "part": 7,
@@ -2399,7 +3284,7 @@ class Part7DoublePassageFewShotExamples:
         }
     ]
 
-    # 4) Form + Notice
+    # Form + Notice
     form_notice = [
         {
             "part": 7,
@@ -2661,7 +3546,7 @@ class Part7TriplePassageFewShotExamples:
     ─ 대표 조합: Email+Schedule+Notice, Chat+Article+Form 등 ─
     """
 
-    # 1) Email + Schedule + Notice
+    # Email + Schedule + Notice
     email_schedule_notice = [
         {
             "part": 7,
@@ -2894,7 +3779,7 @@ class Part7TriplePassageFewShotExamples:
         }
     ]
 
-    # 2) Chat + Article + Form
+    # Chat + Article + Form
     chat_article_form = [
         {
             "part": 7,
@@ -3114,6 +3999,828 @@ class Part7TriplePassageFewShotExamples:
                     ],
                     "answer": "A",
                     "explanation": "기사와 신청서 모두 비상 연락처, 티셔츠 사이즈 필수 기재 명시.",
+                },
+            ],
+        }
+    ]
+
+    # Advertisement + Article + Form
+    advertisement_article_form = [
+        {
+            "part": 7,
+            "difficulty": "Hard",
+            "questionSetType": "Triple",
+            "passages": [
+                {
+                    "seq": 1,
+                    "type": "Advertisement",
+                    "text": (
+                        "**Join the Annual Tech Conference!**\n\n"
+                        "Date: June 15-16, 2023\n"
+                        "Location: Grand Convention Center, Downtown\n"
+                        "Early Bird Registration: $199 (until May 31)\n"
+                        "Regular Registration: $249 (after May 31)\n"
+                        "Group Discount: 10% off for groups of 5 or more\n"
+                        "Includes: Access to all sessions, lunch, and a conference kit.\n"
+                        "Register now at www.techconference.com!"
+                    ),
+                    "translation": (
+                        "**연례 기술 컨퍼런스에 참여하세요!**\n\n"
+                        "일시: 2023년 6월 15-16일\n"
+                        "장소: 그랜드 컨벤션 센터, 다운타운\n"
+                        "얼리버드 등록비: $199 (5월 31일까지)\n"
+                        "정상 등록비: $249 (5월 31일 이후)\n"
+                        "단체 할인: 5인 이상 그룹에 대해 10% 할인\n"
+                        "포함 사항: 모든 세션 참석, 점심 및 컨퍼런스 키트 제공.\n"
+                        "지금 www.techconference.com에서 등록하세요!"
+                    ),
+                },
+                {
+                    "seq": 2,
+                    "type": "Article",
+                    "text": (
+                        "**Annual Tech Conference Overview**\n\n"
+                        "- The Annual Tech Conference is a premier event for technology professionals to network and learn about the latest trends in the industry.\n"
+                        "- This year’s keynote speakers include renowned experts from leading tech companies.\n"
+                        "[1] - Attendees can choose from various workshops and panel discussions tailored to different interests and skill levels.\n"
+                        "- For those with dietary restrictions, please indicate your preferences during registration.\n"
+                        "[2] - A feedback survey will be sent after the event to gather insights for future improvements.\n"
+                        "[3]"
+                    ),
+                    "translation": (
+                        "**연례 기술 컨퍼런스 개요**\n\n"
+                        "- 연례 기술 컨퍼런스는 기술 전문가들이 네트워킹하고 최신 산업 동향을 배울 수 있는 주요 행사입니다.\n"
+                        "- 올해의 기조 연설자는 주요 기술 회사의 저명한 전문가들로 구성되어 있습니다.\n"
+                        "[1] - 참석자는 다양한 관심사와 기술 수준에 맞춘 워크숍 및 패널 토론 중에서 선택할 수 있습니다.\n"
+                        "- 식이 제한이 있는 분들은 등록 시 선호도를 알려주시기 바랍니다.\n"
+                        "[2] - 이벤트 후 피드백 설문조사가 발송되어 향후 개선을 위한 통찰력을 수집합니다.\n"
+                        "[3]"
+                    ),
+                },
+                {
+                    "seq": 3,
+                    "type": "Form",
+                    "text": (
+                        "**Conference Registration Form**\n\n"
+                        "Please fill out the form below to register for the Annual Tech Conference.\n"
+                        "Name: ___________________________\n"
+                        "Email: ___________________________\n"
+                        "Phone: ___________________________\n"
+                        "Company: _________________________\n"
+                        "Job Title: _______________________\n"
+                        "Dietary Restrictions: ______________\n"
+                        "Early Bird Registration: $199 (until May 31)\n"
+                        "Regular Registration: $249 (after May 31)\n"
+                        "Group Discount: 10% off for groups of 5 or more\n"
+                        "Payment Method: __________________\n"
+                        "Signature: ________________________\n"
+                    ),
+                    "translation": (
+                        "**컨퍼런스 등록 양식**\n\n"
+                        "연례 기술 컨퍼런스에 등록하려면 아래 양식을 작성해 주십시오.\n"
+                        "이름: ___________________________\n"
+                        "이메일: ___________________________\n"
+                        "전화: ___________________________\n"
+                        "회사: _________________________\n"
+                        "직책: _______________________\n"
+                        "식이 제한: ______________\n"
+                        "얼리버드 등록비: $199 (5월 31일까지)\n"
+                        "정상 등록비: $249 (5월 31일 이후)\n"
+                        "단체 할인: 5인 이상 그룹에 대해 10% 할인\n"
+                        "결제 방법: __________________\n"
+                        "서명: ________________________\n"
+                    ),
+                },
+            ],
+            "questions": [
+                {
+                    "questionSeq": 1,
+                    "questionType": "세부사항",
+                    "questionText": "What is the early bird registration fee?",
+                    "questionTranslation": "얼리버드 등록비는 얼마입니까?",
+                    "choices": [
+                        {"id": "A", "text": "$199", "translation": "$199"},
+                        {"id": "B", "text": "$249", "translation": "$249"},
+                        {"id": "C", "text": "$299", "translation": "$299"},
+                        {"id": "D", "text": "$150", "translation": "$150"},
+                    ],
+                    "answer": "A",
+                    "explanation": "광고에 얼리버드 등록비가 $199라고 명시됨.",
+                },
+                {
+                    "questionSeq": 2,
+                    "questionType": "세부사항",
+                    "questionText": (
+                        "According to the article, what should attendees do if they have dietary restrictions?"
+                    ),
+                    "questionTranslation": (
+                        "기사에 따르면, 참석자가 식이 제한이 있는 경우 어떻게 해야 합니까?"
+                    ),
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "Contact the venue directly.",
+                            "translation": "장소에 직접 연락하기",
+                        },
+                        {
+                            "id": "B",
+                            "text": ("Indicate preferences during registration."),
+                            "translation": "등록 시 선호도 기재하기",
+                        },
+                        {
+                            "id": "C",
+                            "text": ("Bring their own food."),
+                            "translation": "자신의 음식을 가져오기",
+                        },
+                        {
+                            "id": "D",
+                            "text": ("Notify the speakers in advance."),
+                            "translation": "사전에 연사에게 알리기",
+                        },
+                    ],
+                    "answer": "B",
+                    "explanation": (
+                        "기사에 등록 시 식이 제한을 알려달라고 명시되어 있음."
+                    ),
+                },
+                {
+                    "questionSeq": 3,
+                    "questionType": "정보연계",
+                    "questionText": (
+                        "If a group of six registers together, what is the total cost for early bird registration?"
+                    ),
+                    "questionTranslation": (
+                        "6명이 함께 등록하면 얼리버드 등록비는 총 얼마입니까?"
+                    ),
+                    "choices": [
+                        {"id": "A", "text": "$1,194", "translation": "$1,194"},
+                        {"id": "B", "text": "$1,074", "translation": "$1,074"},
+                        {"id": "C", "text": "$1,200", "translation": "$1,200"},
+                        {"id": "D", "text": "$1,500", "translation": "$1,500"},
+                    ],
+                    "answer": "B",
+                    "explanation": (
+                        "얼리버드 등록비 $199 × 6명 = $1,194, 10% 할인 적용 시 $1,194 × 0.9 = $1,074."
+                    ),
+                },
+                {
+                    "questionSeq": 4,
+                    "questionType": "문장삽입",
+                    "questionText": (
+                        "Where would the following sentence best fit in the article?\n"
+                        '"Workshops will cover topics such as artificial intelligence, cybersecurity, and cloud computing."\n'
+                        "Choose the most appropriate position marked [1], [2], or [3]."
+                    ),
+                    "questionTranslation": (
+                        "다음 문장을 기사에 삽입하기에 가장 적절한 위치는 어디입니까?\n"
+                        '"워크숍에서는 인공지능, 사이버보안, 클라우드 컴퓨팅 등 다양한 주제를 다룹니다."\n'
+                        "표시된 [1], [2], [3] 중 가장 적절한 위치를 고르세요."
+                    ),
+                    "choices": [
+                        {"id": "A", "text": "[1]", "translation": "[1]"},
+                        {"id": "B", "text": "[2]", "translation": "[2]"},
+                        {"id": "C", "text": "[3]", "translation": "[3]"},
+                        {
+                            "id": "D",
+                            "text": "None of the above",
+                            "translation": "해당 없음",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": (
+                        "워크숍 주제 설명이므로, 워크숍 선택 안내 바로 뒤([1])가 가장 자연스럽다."
+                    ),
+                },
+                {
+                    "questionSeq": 5,
+                    "questionType": "어휘",
+                    "questionText": (
+                        'In the article, the word "renowned" is closest in meaning to ____.'
+                    ),
+                    "questionTranslation": (
+                        '기사에서 "renowned"는 문맥상 어떤 의미와 가장 가깝습니까?'
+                    ),
+                    "choices": [
+                        {"id": "A", "text": "famous", "translation": "유명한"},
+                        {"id": "B", "text": "ordinary", "translation": "평범한"},
+                        {"id": "C", "text": "recent", "translation": "최근의"},
+                        {"id": "D", "text": "distant", "translation": "먼"},
+                    ],
+                    "answer": "A",
+                    "explanation": '"renowned"는 유명한, 저명한이라는 의미이다.',
+                },
+            ],
+        }
+    ]
+
+    # Email + Memo + Chart
+    email_memo_chart = [
+        {
+            "part": 7,
+            "difficulty": "Hard",
+            "questionSetType": "Triple",
+            "passages": [
+                {
+                    "seq": 1,
+                    "type": "Email",
+                    "text": (
+                        "**Subject: Reminder: Team Meeting Tomorrow**\n\n"
+                        "Dear Team,\n\n"
+                        "This is a reminder that we have our weekly team meeting scheduled for tomorrow at 10:00 AM in Conference Room B. "
+                        "Please come prepared with updates on your current projects and any challenges you are facing.\n\n"
+                        "Best regards,\n"
+                        "Manager Lee"
+                    ),
+                    "translation": (
+                        "**제목: 내일 팀 미팅 알림**\n\n"
+                        "팀 여러분,\n\n"
+                        "내일 오전 10시에 B회의실에서 주간 팀 미팅이 예정되어 있음을 알려드립니다. "
+                        "각자 현재 진행 중인 프로젝트와 직면한 문제에 대한 업데이트를 준비해 오시기 바랍니다.\n\n"
+                        "감사합니다,\n"
+                        "이 매니저"
+                    ),
+                },
+                {
+                    "seq": 2,
+                    "type": "Memo",
+                    "text": (
+                        "**Team Meeting Agenda**\n\n"
+                        "- Review of last week’s action items\n"
+                        "- Project updates from each team member\n"
+                        "- Discussion of upcoming deadlines\n"
+                        "- Open floor for questions and concerns\n"
+                    ),
+                    "translation": (
+                        "**팀 미팅 안건**\n\n"
+                        "- 지난 주 행동 항목 검토\n"
+                        "- 각 팀원의 프로젝트 업데이트\n"
+                        "- 다가오는 마감일 논의\n"
+                        "- 질문 및 우려 사항 자유 토론\n"
+                    ),
+                },
+                {
+                    "seq": 3,
+                    "type": "Chart",
+                    "text": (
+                        "**Project Status Overview**\n\n"
+                        "| Project Name | Status   | Deadline   |\n"
+                        "|---------------|----------|------------|\n"
+                        "| Project A    | On Track | June 30    |\n"
+                        "| Project B    | Delayed  | July 15    |\n"
+                        "| Project C    | Completed| May 20     |\n"
+                    ),
+                    "translation": (
+                        "**프로젝트 상태 개요**\n\n"
+                        "| 프로젝트 이름 | 상태     | 마감일    |\n"
+                        "|---------------|----------|------------|\n"
+                        "| 프로젝트 A    | 순조로움 | 6월 30일   |\n"
+                        "| 프로젝트 B    | 지연됨   | 7월 15일   |\n"
+                        "| 프로젝트 C    | 완료됨   | 5월 20일   |\n"
+                    ),
+                },
+            ],
+            "questions": [
+                {
+                    "questionSeq": 1,
+                    "questionType": "세부사항",
+                    "questionText": "What time is the team meeting scheduled for?",
+                    "questionTranslation": "팀 미팅은 몇 시로 예정되어 있습니까?",
+                    "choices": [
+                        {"id": "A", "text": "9:00 AM", "translation": "오전 9시"},
+                        {"id": "B", "text": "10:00 AM", "translation": "오전 10시"},
+                        {"id": "C", "text": "11:00 AM", "translation": "오전 11시"},
+                        {"id": "D", "text": "12:00 PM", "translation": "오후 12시"},
+                    ],
+                    "answer": "B",
+                    "explanation": "이메일 본문에 오전 10시로 명시되어 있음.",
+                },
+                {
+                    "questionSeq": 2,
+                    "questionType": "세부사항",
+                    "questionText": "According to the memo, what is the first item on the agenda for the meeting?",
+                    "questionTranslation": "메모에 따르면, 미팅 안건의 첫 번째 항목은 무엇입니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "Review of last week’s action items",
+                            "translation": "지난 주 행동 항목 검토",
+                        },
+                        {
+                            "id": "B",
+                            "text": "Project updates from each team member",
+                            "translation": "각 팀원의 프로젝트 업데이트",
+                        },
+                        {
+                            "id": "C",
+                            "text": "Discussion of upcoming deadlines",
+                            "translation": "다가오는 마감일 논의",
+                        },
+                        {
+                            "id": "D",
+                            "text": "Open floor for questions and concerns",
+                            "translation": "질문 및 우려 사항 자유 토론",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": "메모의 첫 번째 항목이 'Review of last week’s action items'로 기재됨.",
+                },
+                {
+                    "questionSeq": 3,
+                    "questionType": "추론",
+                    "questionText": "What can be inferred about Project B?",
+                    "questionTranslation": "프로젝트 B에 대해 무엇을 추론할 수 있습니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "It is expected to finish early.",
+                            "translation": "예정보다 빨리 끝날 것으로 예상된다.",
+                        },
+                        {
+                            "id": "B",
+                            "text": "It has already been completed.",
+                            "translation": "이미 완료되었다.",
+                        },
+                        {
+                            "id": "C",
+                            "text": "It may miss its deadline.",
+                            "translation": "마감일을 놓칠 가능성이 있다.",
+                        },
+                        {
+                            "id": "D",
+                            "text": "It was canceled recently.",
+                            "translation": "최근에 취소되었다.",
+                        },
+                    ],
+                    "answer": "C",
+                    "explanation": "'Delayed' 상태이므로 마감일을 지키지 못할 가능성이 있음.",
+                },
+                {
+                    "questionSeq": 4,
+                    "questionType": "어휘",
+                    "questionText": "In the email, the word 'prepared' is closest in meaning to:",
+                    "questionTranslation": "이메일에서 'prepared'는 다음 중 어떤 의미에 가장 가깝습니까?",
+                    "choices": [
+                        {"id": "A", "text": "excited", "translation": "기쁜"},
+                        {"id": "B", "text": "ready", "translation": "준비된"},
+                        {"id": "C", "text": "concerned", "translation": "걱정하는"},
+                        {"id": "D", "text": "curious", "translation": "궁금한"},
+                    ],
+                    "answer": "B",
+                    "explanation": "'Come prepared with updates'는 '업데이트를 준비해 오라'는 의미이므로, 'ready'와 유의어.",
+                },
+                {
+                    "questionSeq": 5,
+                    "questionType": "참조",
+                    "questionText": "In the memo, what does the word 'each' in 'each team member' refer to?",
+                    "questionTranslation": "메모에서 'each team member'의 'each'는 누구를 가리킵니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "Only new staff",
+                            "translation": "신입 직원만",
+                        },
+                        {
+                            "id": "B",
+                            "text": "Only project managers",
+                            "translation": "프로젝트 매니저만",
+                        },
+                        {
+                            "id": "C",
+                            "text": "All members of the team",
+                            "translation": "팀의 모든 구성원",
+                        },
+                        {
+                            "id": "D",
+                            "text": "External contractors",
+                            "translation": "외부 계약자",
+                        },
+                    ],
+                    "answer": "C",
+                    "explanation": "'Each team member'는 모든 팀 구성원을 지칭하므로 C가 정답.",
+                },
+            ],
+        }
+    ]
+
+    # Letter + Advertisement + Receipt
+    letter_advertisement_receipt = [
+        {
+            "part": 7,
+            "difficulty": "Hard",
+            "questionSetType": "Triple",
+            "passages": [
+                {
+                    "seq": 1,
+                    "type": "Letter",
+                    "text": (
+                        "Dear Valued Customer,\n\n"
+                        "Thank you for purchasing the TechNova SmartHome Hub. We hope it brings convenience to your daily life. "
+                        "As a token of our appreciation, we are pleased to offer you a 10% discount on your next purchase. This discount is valid through August 31.\n\n"
+                        "If you need assistance with installation or have any questions, our customer service team is happy to help.\n\n"
+                        "Sincerely,\n"
+                        "TechNova Electronics"
+                    ),
+                    "translation": (
+                        "소중한 고객님께,\n\n"
+                        "TechNova 스마트홈 허브를 구매해 주셔서 감사합니다. 고객님의 일상에 편리함을 더해드릴 수 있기를 바랍니다. "
+                        "감사의 뜻으로, 다음 구매 시 10% 할인 혜택을 드립니다. 본 할인은 8월 31일까지 유효합니다.\n\n"
+                        "설치 관련 도움이 필요하시거나 문의사항이 있으시면 고객센터로 연락 주세요.\n\n"
+                        "감사합니다.\n"
+                        "TechNova Electronics 드림"
+                    ),
+                },
+                {
+                    "seq": 2,
+                    "type": "Advertisement",
+                    "text": (
+                        "Upgrade Your Home with TechNova!\n\n"
+                        "Enjoy full control of your home environment with the new TechNova SmartHome Hub. Manage your lighting, security, and climate settings seamlessly.\n\n"
+                        "**Special Offer**: Receive 15% off when you purchase before August 31.\n\n"
+                        "Available online and in stores nationwide."
+                    ),
+                    "translation": (
+                        "당신의 집을 TechNova로 업그레이드하세요!\n\n"
+                        "신형 TechNova 스마트홈 허브로 집 안의 조명, 보안, 온도 설정을 간편하게 제어해 보세요.\n\n"
+                        "**특별 할인**: 8월 31일 이전 구매 시 15% 할인 혜택을 드립니다.\n\n"
+                        "온라인 및 전국 매장에서 구매 가능합니다."
+                    ),
+                },
+                {
+                    "seq": 3,
+                    "type": "Receipt",
+                    "text": (
+                        "TechNova Electronics\n\n"
+                        "Date: August 15\n"
+                        "Item: SmartHome Hub\n"
+                        "Price: $200.00\n"
+                        "Discount: $20.00\n"
+                        "Total Paid: $180.00\n"
+                        "Payment Method: Credit Card\n\n"
+                        "Thank you for shopping with us!"
+                    ),
+                    "translation": (
+                        "TechNova Electronics\n\n"
+                        "구매일: 8월 15일\n"
+                        "상품: 스마트홈 허브\n"
+                        "가격: $200.00\n"
+                        "할인: $20.00\n"
+                        "결제 금액: $180.00\n"
+                        "결제 방식: 신용카드\n\n"
+                        "저희 매장에서 구매해 주셔서 감사합니다!"
+                    ),
+                },
+            ],
+            "questions": [
+                {
+                    "questionSeq": 1,
+                    "questionType": "주제/목적",
+                    "questionText": "What is the main purpose of the letter?",
+                    "questionTranslation": "편지의 주요 목적은 무엇입니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "To advertise a new product",
+                            "translation": "신제품을 광고하기 위해",
+                        },
+                        {
+                            "id": "B",
+                            "text": "To provide installation instructions",
+                            "translation": "설치 지침을 제공하기 위해",
+                        },
+                        {
+                            "id": "C",
+                            "text": "To thank the customer and offer a discount",
+                            "translation": "고객에게 감사를 전하고 할인 혜택을 제공하기 위해",
+                        },
+                        {
+                            "id": "D",
+                            "text": "To confirm a delivery",
+                            "translation": "배송을 확인하기 위해",
+                        },
+                    ],
+                    "answer": "C",
+                    "explanation": "편지는 구매에 대한 감사와 함께 할인 쿠폰을 안내하는 것이 목적입니다.",
+                },
+                {
+                    "questionSeq": 2,
+                    "questionType": "세부사항",
+                    "questionText": "What is the final price paid according to the receipt?",
+                    "questionTranslation": "영수증에 따르면 최종 결제 금액은 얼마입니까?",
+                    "choices": [
+                        {"id": "A", "text": "$160.00", "translation": "$160.00"},
+                        {"id": "B", "text": "$180.00", "translation": "$180.00"},
+                        {"id": "C", "text": "$200.00", "translation": "$200.00"},
+                        {"id": "D", "text": "$220.00", "translation": "$220.00"},
+                    ],
+                    "answer": "B",
+                    "explanation": "영수증에 결제 금액은 $180.00으로 명시되어 있습니다.",
+                },
+                {
+                    "questionSeq": 3,
+                    "questionType": "일치",
+                    "questionText": "Which of the following is NOT mentioned in the receipt?",
+                    "questionTranslation": "다음 중 영수증에 언급되지 않은 것은 무엇입니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "Date of purchase",
+                            "translation": "구매 날짜",
+                        },
+                        {
+                            "id": "B",
+                            "text": "Payment method",
+                            "translation": "결제 방식",
+                        },
+                        {
+                            "id": "C",
+                            "text": "Customer name",
+                            "translation": "고객 이름",
+                        },
+                        {
+                            "id": "D",
+                            "text": "Discount amount",
+                            "translation": "할인 금액",
+                        },
+                    ],
+                    "answer": "C",
+                    "explanation": "고객 이름은 언급되어 있지 않으며, 나머지는 모두 기재되어 있습니다.",
+                },
+                {
+                    "questionSeq": 4,
+                    "questionType": "정보연계",
+                    "questionText": "What total discount can be inferred from both the letter and the advertisement?",
+                    "questionTranslation": "편지와 광고 내용을 종합하면 총 몇 퍼센트의 할인이 가능한가요?",
+                    "choices": [
+                        {"id": "A", "text": "10%", "translation": "10%"},
+                        {"id": "B", "text": "15%", "translation": "15%"},
+                        {"id": "C", "text": "25%", "translation": "25%"},
+                        {"id": "D", "text": "No discount", "translation": "할인 없음"},
+                    ],
+                    "answer": "C",
+                    "explanation": "편지에서 10%, 광고에서 15%를 언급하여 둘 다 적용되면 25%가 됩니다.",
+                },
+                {
+                    "questionSeq": 5,
+                    "questionType": "추론",
+                    "questionText": "What can be inferred about the timing of the customer's purchase?",
+                    "questionTranslation": "고객의 구매 시점에 대해 무엇을 추론할 수 있습니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "It occurred before the offer period began",
+                            "translation": "할인 기간 시작 전에 이루어졌다",
+                        },
+                        {
+                            "id": "B",
+                            "text": "It occurred during the valid offer period",
+                            "translation": "할인 적용 기간 중에 이루어졌다",
+                        },
+                        {
+                            "id": "C",
+                            "text": "It occurred after the offer expired",
+                            "translation": "할인 기간이 끝난 후에 이루어졌다",
+                        },
+                        {
+                            "id": "D",
+                            "text": "It was a return transaction",
+                            "translation": "반품 거래였다",
+                        },
+                    ],
+                    "answer": "B",
+                    "explanation": "영수증에 8월 15일 구매로 되어 있고, 할인은 8월 31일까지 유효하므로 할인 기간 내 구매입니다.",
+                },
+            ],
+        }
+    ]
+
+    # Email + Chat + Report
+    email_chat_report = [
+        {
+            "part": 7,
+            "difficulty": "Hard",
+            "questionSetType": "Triple",
+            "passages": [
+                {
+                    "seq": 1,
+                    "type": "Email",
+                    "text": (
+                        "Subject: Request for Updated Sales Figures\n\n"
+                        "Dear Mr. Collins,\n\n"
+                        "Could you please provide the updated sales report for the third quarter? "
+                        "Since the board meeting will focus on performance, it is important to have accurate data. "
+                        "We are preparing for the upcoming board meeting next Monday and would like to include the most recent data. "
+                        "If possible, please send it by Thursday afternoon.\n\n"
+                        "Best regards,\n"
+                        "Sandra Cho\n"
+                        "Operations Manager"
+                    ),
+                    "translation": (
+                        "제목: 3분기 매출 보고서 요청\n\n"
+                        "Collins 씨,\n\n"
+                        "다가오는 이사회 준비를 위해 3분기 매출 보고서를 보내주실 수 있을까요? "
+                        "이사회는 실적에 중점을 둘 예정이므로 정확한 데이터가 중요합니다. "
+                        "가능하시다면 목요일 오후까지 보내주시면 감사하겠습니다.\n\n"
+                        "감사합니다.\n"
+                        "Operations Manager Sandra Cho 드림"
+                    ),
+                },
+                {
+                    "seq": 2,
+                    "type": "Chat",
+                    "text": (
+                        "Jason: Hey Carla, did you get the sales data from Collins?\n"
+                        "Carla: Not yet. He said he would send it by end of day today, but last time he was late by a day.\n"
+                        "Jason: We really need it for Sandra's board presentation. She wants to review the numbers and prepare some slides by tomorrow afternoon.\n"
+                        "Carla: I know. The Q3 numbers are more complex this time, with the new product lines and the regional breakdowns. I hope Collins includes the detailed channel analysis and the monthly trends.\n"
+                        "Jason: Did you see the draft report from last quarter? There were some missing figures for the wholesale channel.\n"
+                        "Carla: Yes, and Sandra specifically asked for a comparison with Q2 and a breakdown by product category. I'll follow up with Collins if it's not in by noon. If we don't get the full data, the board might delay the decision on next quarter's targets.\n"
+                        "Jason: Good idea. Let me know as soon as you get it. I'll start drafting the slides for the retail and online channels in the meantime.\n"
+                    ),
+                    "translation": (
+                        "Jason: Carla, Collins한테서 매출 데이터 받았어?\n"
+                        "Carla: 아직. 오늘 중으로 보낸다고 했는데, 지난번에도 하루 늦게 왔잖아.\n"
+                        "Jason: 이번엔 Sandra의 이사회 발표에 꼭 필요해. 내일 오후까지 수치 검토하고 슬라이드도 준비해야 하거든.\n"
+                        "Carla: 맞아. 이번 3분기 수치는 신제품 라인 추가랑 지역별 세부 내역까지 있어서 더 복잡해. Collins가 채널별 분석이랑 월별 추이까지 포함해줬으면 좋겠어.\n"
+                        "Jason: 지난 분기 초안 보고서 봤어? 도매 채널 수치가 누락됐었잖아.\n"
+                        "Carla: 응, 그리고 Sandra가 Q2와의 비교랑 제품군별 세부 내역도 꼭 달라고 했어. 정오까지 안 오면 Collins한테 다시 연락할게. 데이터가 다 안 오면 이사회에서 다음 분기 목표 결정이 미뤄질 수도 있어.\n"
+                        "Jason: 잘 생각했어. 받으면 바로 알려줘. 나는 그동안 소매랑 온라인 채널 슬라이드 초안부터 만들고 있을게.\n"
+                    ),
+                },
+                {
+                    "seq": 3,
+                    "type": "Report",
+                    "text": (
+                        "Q3 Sales Summary – West Region\n\n"
+                        "• Total revenue increased by 12% compared to Q2, reaching $2.4 million, despite supply chain disruptions in August.\n"
+                        "• Product A showed the strongest growth, up 25%, driven by the launch of the new Pro Series in July. Product B sales remained flat, while Product C declined by 8% due to increased competition.\n"
+                        "• Retail channel sales outperformed wholesale for the first time, with retail up 18% and wholesale up 4%. Online sales also grew by 15%, accounting for 28% of total revenue.\n"
+                        "• Regional breakdown: Northern area led growth (+16%), while the Coastal area saw a slight decline (-2%) attributed to inventory delays and late shipments in early August.\n"
+                        "• Monthly trend: July saw the highest sales spike due to the Pro Series launch, but August was impacted by inventory shortages, and September recovered with a successful back-to-school promotion.\n"
+                        "• Challenges included inventory delays in early August, increased logistics costs, and a temporary shortage of key components. Customer feedback highlighted demand for faster delivery and more product variety.\n"
+                        "• Recommendations: Expand inventory buffer for Q4, enhance coordination with logistics partners, and consider targeted promotions for underperforming regions and products.\n"
+                    ),
+                    "translation": (
+                        "3분기 매출 요약 – 서부 지역\n\n"
+                        "• 총 매출은 2분기 대비 12% 증가한 240만 달러를 기록했으며, 8월 공급망 차질에도 불구하고 성장세를 유지함.\n"
+                        "• 제품 A는 7월 Pro Series 신제품 출시 효과로 25% 성장하며 가장 높은 증가율을 보임. 제품 B는 정체, 제품 C는 경쟁 심화로 8% 감소.\n"
+                        "• 소매 채널 매출이 처음으로 도매를 앞질렀으며, 소매는 18% 증가, 도매는 4% 증가. 온라인 매출도 15% 성장해 전체 매출의 28%를 차지함.\n"
+                        "• 지역별로는 북부가 16% 성장으로 선도했고, 해안 지역은 8월 초 재고 지연과 배송 지연 영향으로 2% 감소.\n"
+                        "• 월별 추이: 7월 Pro Series 출시로 최고 매출, 8월은 재고 부족으로 하락, 9월은 신학기 프로모션으로 회복.\n"
+                        "• 주요 문제: 8월 초 재고 지연, 물류비 증가, 핵심 부품 일시 부족. 고객 피드백에서는 더 빠른 배송과 다양한 제품군 요구가 많았음.\n"
+                        "• 제언: 4분기 재고 버퍼 확대, 물류 파트너와의 협업 강화, 부진 지역 및 제품군 대상 타깃 프로모션 검토 필요.\n"
+                    ),
+                },
+            ],
+            "questions": [
+                {
+                    "questionSeq": 1,
+                    "questionType": "주제/목적",
+                    "questionText": "What is the main purpose of Sandra Cho’s email?",
+                    "questionTranslation": "Sandra Cho의 이메일의 주된 목적은 무엇입니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "To complain about a delay",
+                            "translation": "지연에 대해 불만을 제기하려고",
+                        },
+                        {
+                            "id": "B",
+                            "text": "To schedule a meeting",
+                            "translation": "회의 일정을 잡기 위해",
+                        },
+                        {
+                            "id": "C",
+                            "text": "To request a document",
+                            "translation": "문서를 요청하기 위해",
+                        },
+                        {
+                            "id": "D",
+                            "text": "To provide quarterly results",
+                            "translation": "분기 실적을 제공하기 위해",
+                        },
+                    ],
+                    "answer": "C",
+                    "explanation": "Sandra는 이메일에서 3분기 매출 보고서를 요청하고 있습니다.",
+                },
+                {
+                    "questionSeq": 2,
+                    "questionType": "세부사항",
+                    "questionText": "According to the chat, by when does Jason expect to receive the sales data?",
+                    "questionTranslation": "채팅에 따르면 Jason은 언제까지 매출 데이터를 받기를 기대하고 있습니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "Today afternoon",
+                            "translation": "오늘 오후",
+                        },
+                        {
+                            "id": "B",
+                            "text": "Tomorrow morning",
+                            "translation": "내일 아침",
+                        },
+                        {
+                            "id": "C",
+                            "text": "Tomorrow afternoon",
+                            "translation": "내일 오후",
+                        },
+                        {
+                            "id": "D",
+                            "text": "Next Monday",
+                            "translation": "다음 주 월요일",
+                        },
+                    ],
+                    "answer": "C",
+                    "explanation": "Jason은 Sandra가 내일 오후까지 데이터를 필요로 한다고 언급합니다.",
+                },
+                {
+                    "questionSeq": 3,
+                    "questionType": "일치",
+                    "questionText": "Which of the following is mentioned in the Q3 report?",
+                    "questionTranslation": "다음 중 3분기 보고서에 언급된 것은 무엇입니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "A decrease in total revenue",
+                            "translation": "총 매출 감소",
+                        },
+                        {
+                            "id": "B",
+                            "text": "Wholesale channel performed best",
+                            "translation": "도매 채널이 가장 좋았다",
+                        },
+                        {
+                            "id": "C",
+                            "text": "Inventory issues occurred",
+                            "translation": "재고 문제가 발생했다",
+                        },
+                        {
+                            "id": "D",
+                            "text": "Product B had highest growth",
+                            "translation": "제품 B가 가장 높은 성장을 보였다",
+                        },
+                    ],
+                    "answer": "C",
+                    "explanation": "보고서에는 8월 초 재고 지연 문제가 언급되어 있습니다.",
+                },
+                {
+                    "questionSeq": 4,
+                    "questionType": "문장삽입",
+                    "questionText": "Where would the following sentence best fit in the email?\n'Since the board meeting will focus on performance, it is important to have accurate data.'",
+                    "questionTranslation": "다음 문장을 이메일의 어느 위치에 삽입하는 것이 가장 적절합니까?\n'이사회는 실적에 중점을 둘 예정이므로 정확한 데이터가 중요합니다.'",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "After the first sentence",
+                            "translation": "첫 문장 뒤",
+                        },
+                        {
+                            "id": "B",
+                            "text": "Before the closing",
+                            "translation": "마무리 인사 전",
+                        },
+                        {
+                            "id": "C",
+                            "text": "At the very beginning",
+                            "translation": "가장 처음에",
+                        },
+                        {
+                            "id": "D",
+                            "text": "After mentioning the deadline",
+                            "translation": "마감 기한을 언급한 후",
+                        },
+                    ],
+                    "answer": "A",
+                    "explanation": "이 문장은 요청의 이유를 설명하는 문맥이므로, 요청 후 바로 삽입하는 것이 자연스럽습니다.",
+                },
+                {
+                    "questionSeq": 5,
+                    "questionType": "정보연계",
+                    "questionText": "Based on all passages, what is likely to happen if Collins sends the report by Thursday afternoon?",
+                    "questionTranslation": "모든 지문에 따르면 Collins가 목요일 오후까지 보고서를 보내면 어떤 일이 일어날 가능성이 높습니까?",
+                    "choices": [
+                        {
+                            "id": "A",
+                            "text": "The board meeting will be postponed",
+                            "translation": "이사회가 연기될 것이다",
+                        },
+                        {
+                            "id": "B",
+                            "text": "Sandra will cancel the report request",
+                            "translation": "Sandra가 보고서 요청을 취소할 것이다",
+                        },
+                        {
+                            "id": "C",
+                            "text": "The report will be included in the board presentation",
+                            "translation": "보고서가 이사회 발표 자료에 포함될 것이다",
+                        },
+                        {
+                            "id": "D",
+                            "text": "The Q2 results will be replaced",
+                            "translation": "2분기 실적이 교체될 것이다",
+                        },
+                    ],
+                    "answer": "C",
+                    "explanation": "Sandra의 이메일과 Jason의 언급에 따르면, 보고서가 제시간에 오면 이사회 발표 자료로 활용될 것입니다.",
                 },
             ],
         }
