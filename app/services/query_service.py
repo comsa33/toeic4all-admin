@@ -11,7 +11,7 @@ class QueryService:
     """문제 조회 서비스"""
 
     # 동시 조회 세마포어
-    _query_semaphore = asyncio.Semaphore(30)
+    _query_semaphore = asyncio.Semaphore(100)
 
     # Part 5 관련 메서드
     async def get_part5_questions(

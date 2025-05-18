@@ -18,13 +18,21 @@ spec:
     spec:
       nodeSelector:
         "kubernetes.io/os": linux
-        "kubernetes.io/hostname": ruo-server1
+        "kubernetes.io/hostname": ruo-server2
+        "kubernetes.io/hostname": ruo-server3
       containers:
       - name: {{ .Chart.Name }}
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
         - containerPort: 8000
+        resources:
+          requests:
+            cpu: 1
+            memory: 2Gi
+          limits:
+            cpu: 2
+            memory: 4Gi
         env:
         - name: API_PREFIX
           value: {{ .Values.apiPrefix }}

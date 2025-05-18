@@ -31,7 +31,7 @@ ModelType = Union[Part5Question, Part6Set, Part7Set]
 ModelList = Union[List[Part5Question], List[Part6Set], List[Part7Set]]
 
 # 동시 DB 작업 제한을 위한 세마포어
-_db_semaphore = asyncio.Semaphore(20)  # 최대 20개 동시 연결 허용
+_db_semaphore = asyncio.Semaphore(50)  # 최대 50개 동시 연결 허용
 
 
 def with_retry(

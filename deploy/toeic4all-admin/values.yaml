@@ -4,7 +4,7 @@
 
 namespace: toeic4all
 
-replicaCount: 1
+replicaCount: 3
 
 image:
   repository: 192.168.0.5:5000/toeic4all-admin
