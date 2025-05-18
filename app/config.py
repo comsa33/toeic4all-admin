@@ -21,8 +21,8 @@ if ENVIRONMENT == "development":
 class MongoDBSettings(BaseSettings):
     """MongoDB 관련 설정"""
 
-    mongodb_url: str = Field(
-        default_factory=lambda: os.getenv("MONGODB_URL", "mongodb://localhost:27017/"),
+    MONGODB_URI: str = Field(
+        default_factory=lambda: os.getenv("MONGODB_URI", "mongodb://localhost:27017/"),
         description="MongoDB 연결 URL",
     )
     database_name: str = Field(
@@ -38,8 +38,8 @@ class MongoDBSettings(BaseSettings):
         description="MongoDB 최소 연결 풀 크기",
     )
 
-    @field_validator("mongodb_url")
-    def validate_mongodb_url(cls, v):
+    @field_validator("MONGODB_URI")
+    def validate_MONGODB_URI(cls, v):
         if not v.startswith(("mongodb://", "mongodb+srv://")):
             raise ValueError("MongoDB URL must start with mongodb:// or mongodb+srv://")
         return v

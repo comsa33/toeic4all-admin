@@ -15,4 +15,10 @@ service:
   type: LoadBalancer
   port: 80
 
-jwtSecretKey: ""
+apiPrefix: "/api/v1"
+environment: "production"
+geminiApiKey: ""
+mongodbUri: ""
+mongodbMaxPoolSize: "100"
+mongodbMinPoolSize: "10"
+databaseName: "toeic4all"

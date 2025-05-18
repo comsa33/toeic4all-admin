@@ -15,7 +15,7 @@ from app.utils.logger import logger
 class MongoDBConfig(BaseSettings):
     """MongoDB 연결 설정 모델"""
 
-    uri: str = Field(default_factory=lambda: settings.mongodb_url)
+    uri: str = Field(default_factory=lambda: settings.MONGODB_URI)
     database: str = Field(default_factory=lambda: settings.database_name)
     max_pool_size: int = 50
     min_pool_size: int = 10
