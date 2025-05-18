@@ -23,6 +23,8 @@ WORKDIR /app
 COPY pyproject.toml uv.lock /app/
 RUN uv sync --frozen --no-cache
 
+COPY . .
+
 # 로그 디렉토리 생성
 RUN mkdir -p /app/logs
 
