@@ -7,7 +7,6 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
 from app.routes.admin import part5_routes, part6_routes, part7_routes
-from app.routes.api import part5_api, part6_api, part7_api
 from app.utils.db import close_mongodb_connection, connect_to_mongodb, mongodb
 from app.utils.logger import setup_logging
 
@@ -77,23 +76,6 @@ app.include_router(
     part7_routes.router,
     prefix=f"{settings.api_prefix}/admin/part7",
     tags=["Admin - Part 7"],
-)
-
-# 사용자용 API 라우터 등록
-app.include_router(
-    part5_api.router,
-    prefix=f"{settings.api_prefix}/questions/part5",
-    tags=["Questions - Part 5"],
-)
-app.include_router(
-    part6_api.router,
-    prefix=f"{settings.api_prefix}/questions/part6",
-    tags=["Questions - Part 6"],
-)
-app.include_router(
-    part7_api.router,
-    prefix=f"{settings.api_prefix}/questions/part7",
-    tags=["Questions - Part 7"],
 )
 
 
