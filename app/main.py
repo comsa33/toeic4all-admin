@@ -34,8 +34,8 @@ async def lifespan(app: FastAPI):
 
 # FastAPI 애플리케이션 생성 - lifespan 인자 추가
 app = FastAPI(
-    title="TOEIC Question Generator & API",
-    description="TOEIC 문제 생성 및 조회 API",
+    title="TOEIC Question Generator",
+    description="TOEIC 문제 생성 API",
     version="1.0.0",
     docs_url="/docs" if settings.debug else None,
     lifespan=lifespan,  # 라이프스팬 컨텍스트 매니저 지정
