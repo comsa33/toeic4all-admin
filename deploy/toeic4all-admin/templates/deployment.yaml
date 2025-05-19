@@ -49,4 +49,4 @@ spec:
         - name: DATABASE_NAME
           value: {{ .Values.databaseName }}
         - name: DEBUG
-          value: {{ .Values.debug }}
+          value: "{{ .Values.debug }}"
