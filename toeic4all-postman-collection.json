@@ -25,9 +25,9 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{base_url}}/admin/part5/generate?store_in_db=true&return_questions=false",
+                  "raw": "{{admin_url}}/admin/part5/generate?store_in_db=true&return_questions=false",
                   "host": [
-                    "{{base_url}}"
+                    "{{admin_url}}"
                   ],
                   "path": [
                     "admin",
@@ -70,9 +70,9 @@
                       }
                     ],
                     "url": {
-                      "raw": "{{base_url}}/admin/part5/generate?store_in_db=true&return_questions=false",
+                      "raw": "{{admin_url}}/admin/part5/generate?store_in_db=true&return_questions=false",
                       "host": [
-                        "{{base_url}}"
+                        "{{admin_url}}"
                       ],
                       "path": [
                         "admin",
@@ -120,9 +120,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/admin/part5/categories",
+                  "raw": "{{admin_url}}/admin/part5/categories",
                   "host": [
-                    "{{base_url}}"
+                    "{{admin_url}}"
                   ],
                   "path": [
                     "admin",
@@ -139,9 +139,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/admin/part5/categories",
+                      "raw": "{{admin_url}}/admin/part5/categories",
                       "host": [
-                        "{{base_url}}"
+                        "{{admin_url}}"
                       ],
                       "path": [
                         "admin",
@@ -181,9 +181,9 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{base_url}}/admin/part6/generate?store_in_db=true&return_sets=false",
+                  "raw": "{{admin_url}}/admin/part6/generate?store_in_db=true&return_sets=false",
                   "host": [
-                    "{{base_url}}"
+                    "{{admin_url}}"
                   ],
                   "path": [
                     "admin",
@@ -226,9 +226,9 @@
                       }
                     ],
                     "url": {
-                      "raw": "{{base_url}}/admin/part6/generate?store_in_db=true&return_sets=false",
+                      "raw": "{{admin_url}}/admin/part6/generate?store_in_db=true&return_sets=false",
                       "host": [
-                        "{{base_url}}"
+                        "{{admin_url}}"
                       ],
                       "path": [
                         "admin",
@@ -276,9 +276,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/admin/part6/passage_types",
+                  "raw": "{{admin_url}}/admin/part6/passage_types",
                   "host": [
-                    "{{base_url}}"
+                    "{{admin_url}}"
                   ],
                   "path": [
                     "admin",
@@ -295,9 +295,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/admin/part6/passage_types",
+                      "raw": "{{admin_url}}/admin/part6/passage_types",
                       "host": [
-                        "{{base_url}}"
+                        "{{admin_url}}"
                       ],
                       "path": [
                         "admin",
@@ -337,9 +337,9 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{base_url}}/admin/part7/generate?store_in_db=true&return_sets=false",
+                  "raw": "{{admin_url}}/admin/part7/generate?store_in_db=true&return_sets=false",
                   "host": [
-                    "{{base_url}}"
+                    "{{admin_url}}"
                   ],
                   "path": [
                     "admin",
@@ -382,9 +382,9 @@
                       }
                     ],
                     "url": {
-                      "raw": "{{base_url}}/admin/part7/generate?store_in_db=true&return_sets=false",
+                      "raw": "{{admin_url}}/admin/part7/generate?store_in_db=true&return_sets=false",
                       "host": [
-                        "{{base_url}}"
+                        "{{admin_url}}"
                       ],
                       "path": [
                         "admin",
@@ -435,9 +435,9 @@
                       }
                     ],
                     "url": {
-                      "raw": "{{base_url}}/admin/part7/generate?store_in_db=true&return_sets=false",
+                      "raw": "{{admin_url}}/admin/part7/generate?store_in_db=true&return_sets=false",
                       "host": [
-                        "{{base_url}}"
+                        "{{admin_url}}"
                       ],
                       "path": [
                         "admin",
@@ -485,9 +485,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/admin/part7/passage_types",
+                  "raw": "{{admin_url}}/admin/part7/passage_types",
                   "host": [
-                    "{{base_url}}"
+                    "{{admin_url}}"
                   ],
                   "path": [
                     "admin",
@@ -504,9 +504,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/admin/part7/passage_types",
+                      "raw": "{{admin_url}}/admin/part7/passage_types",
                       "host": [
-                        "{{base_url}}"
+                        "{{admin_url}}"
                       ],
                       "path": [
                         "admin",
@@ -535,9 +535,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/admin/part7/set_types",
+                  "raw": "{{admin_url}}/admin/part7/set_types",
                   "host": [
-                    "{{base_url}}"
+                    "{{admin_url}}"
                   ],
                   "path": [
                     "admin",
@@ -554,9 +554,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/admin/part7/set_types",
+                      "raw": "{{admin_url}}/admin/part7/set_types",
                       "host": [
-                        "{{base_url}}"
+                        "{{admin_url}}"
                       ],
                       "path": [
                         "admin",
@@ -597,9 +597,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/questions/part5/?category=문법&subtype=시제&difficulty=Medium&limit=10&page=1",
+                  "raw": "{{apis_url}}/questions/part5/?category=문법&subtype=시제&difficulty=Medium&limit=10&page=1",
                   "host": [
-                    "{{base_url}}"
+                    "{{apis_url}}"
                   ],
                   "path": [
                     "questions",
@@ -643,9 +643,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/questions/part5/?category=문법&subtype=시제&difficulty=Medium&limit=10&page=1",
+                      "raw": "{{apis_url}}/questions/part5/?category=문법&subtype=시제&difficulty=Medium&limit=10&page=1",
                       "host": [
-                        "{{base_url}}"
+                        "{{apis_url}}"
                       ],
                       "path": [
                         "questions",
@@ -696,9 +696,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/questions/part5/{{question_id}}/answer",
+                  "raw": "{{apis_url}}/questions/part5/{{question_id}}/answer",
                   "host": [
-                    "{{base_url}}"
+                    "{{apis_url}}"
                   ],
                   "path": [
                     "questions",
@@ -716,9 +716,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/questions/part5/658a1b2c3d4e5f6a7b8c9d0e/answer",
+                      "raw": "{{apis_url}}/questions/part5/658a1b2c3d4e5f6a7b8c9d0e/answer",
                       "host": [
-                        "{{base_url}}"
+                        "{{apis_url}}"
                       ],
                       "path": [
                         "questions",
@@ -748,9 +748,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/questions/part5/categories?used_only=false",
+                  "raw": "{{apis_url}}/questions/part5/categories?used_only=false",
                   "host": [
-                    "{{base_url}}"
+                    "{{apis_url}}"
                   ],
                   "path": [
                     "questions",
@@ -774,9 +774,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/questions/part5/categories?used_only=false",
+                      "raw": "{{apis_url}}/questions/part5/categories?used_only=false",
                       "host": [
-                        "{{base_url}}"
+                        "{{apis_url}}"
                       ],
                       "path": [
                         "questions",
@@ -811,9 +811,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/questions/part5/subtypes?category=문법&used_only=false",
+                  "raw": "{{apis_url}}/questions/part5/subtypes?category=문법&used_only=false",
                   "host": [
-                    "{{base_url}}"
+                    "{{apis_url}}"
                   ],
                   "path": [
                     "questions",
@@ -842,9 +842,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/questions/part5/subtypes?category=문법&used_only=false",
+                      "raw": "{{apis_url}}/questions/part5/subtypes?category=문법&used_only=false",
                       "host": [
-                        "{{base_url}}"
+                        "{{apis_url}}"
                       ],
                       "path": [
                         "questions",
@@ -881,9 +881,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/questions/part5/subtypes?used_only=false",
+                      "raw": "{{apis_url}}/questions/part5/subtypes?used_only=false",
                       "host": [
-                        "{{base_url}}"
+                        "{{apis_url}}"
                       ],
                       "path": [
                         "questions",
@@ -918,9 +918,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/questions/part5/difficulties?category=문법&subtype=시제&used_only=false",
+                  "raw": "{{apis_url}}/questions/part5/difficulties?category=문법&subtype=시제&used_only=false",
                   "host": [
-                    "{{base_url}}"
+                    "{{apis_url}}"
                   ],
                   "path": [
                     "questions",
@@ -954,9 +954,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/questions/part5/difficulties?category=문법&subtype=시제&used_only=false",
+                      "raw": "{{apis_url}}/questions/part5/difficulties?category=문법&subtype=시제&used_only=false",
                       "host": [
-                        "{{base_url}}"
+                        "{{apis_url}}"
                       ],
                       "path": [
                         "questions",
@@ -1005,9 +1005,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/questions/part6/?passage_type=Email/Letter&difficulty=Medium&limit=2&page=1",
+                  "raw": "{{apis_url}}/questions/part6/?passage_type=Email/Letter&difficulty=Medium&limit=2&page=1",
                   "host": [
-                    "{{base_url}}"
+                    "{{apis_url}}"
                   ],
                   "path": [
                     "questions",
@@ -1046,9 +1046,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/questions/part6/?passage_type=Email/Letter&difficulty=Medium&limit=2&page=1",
+                      "raw": "{{apis_url}}/questions/part6/?passage_type=Email/Letter&difficulty=Medium&limit=2&page=1",
                       "host": [
-                        "{{base_url}}"
+                        "{{apis_url}}"
                       ],
                       "path": [
                         "questions",
@@ -1095,9 +1095,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/questions/part6/{{set_id}}/answers/{{question_seq}}",
+                  "raw": "{{apis_url}}/questions/part6/{{set_id}}/answers/{{question_seq}}",
                   "host": [
-                    "{{base_url}}"
+                    "{{apis_url}}"
                   ],
                   "path": [
                     "questions",
@@ -1116,9 +1116,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/questions/part6/658a1b2c3d4e5f6a7b8c9d0e/answers/1",
+                      "raw": "{{apis_url}}/questions/part6/658a1b2c3d4e5f6a7b8c9d0e/answers/1",
                       "host": [
-                        "{{base_url}}"
+                        "{{apis_url}}"
                       ],
                       "path": [
                         "questions",
@@ -1149,9 +1149,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/questions/part6/passage_types?used_only=false",
+                  "raw": "{{apis_url}}/questions/part6/passage_types?used_only=false",
                   "host": [
-                    "{{base_url}}"
+                    "{{apis_url}}"
                   ],
                   "path": [
                     "questions",
@@ -1175,9 +1175,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/questions/part6/passage_types?used_only=false",
+                      "raw": "{{apis_url}}/questions/part6/passage_types?used_only=false",
                       "host": [
-                        "{{base_url}}"
+                        "{{apis_url}}"
                       ],
                       "path": [
                         "questions",
@@ -1212,9 +1212,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/questions/part6/difficulties?passage_type=Email/Letter&used_only=false",
+                  "raw": "{{apis_url}}/questions/part6/difficulties?passage_type=Email/Letter&used_only=false",
                   "host": [
-                    "{{base_url}}"
+                    "{{apis_url}}"
                   ],
                   "path": [
                     "questions",
@@ -1243,9 +1243,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/questions/part6/difficulties?passage_type=Email/Letter&used_only=false",
+                      "raw": "{{apis_url}}/questions/part6/difficulties?passage_type=Email/Letter&used_only=false",
                       "host": [
-                        "{{base_url}}"
+                        "{{apis_url}}"
                       ],
                       "path": [
                         "questions",
@@ -1290,9 +1290,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/questions/part7/?set_type=Single&passage_types[]=Article&difficulty=Medium&limit=1&page=1",
+                  "raw": "{{apis_url}}/questions/part7/?set_type=Single&passage_types[]=Article&difficulty=Medium&limit=1&page=1",
                   "host": [
-                    "{{base_url}}"
+                    "{{apis_url}}"
                   ],
                   "path": [
                     "questions",
@@ -1336,9 +1336,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/questions/part7/?set_type=Single&passage_types[]=Article&difficulty=Medium&limit=1&page=1",
+                      "raw": "{{apis_url}}/questions/part7/?set_type=Single&passage_types[]=Article&difficulty=Medium&limit=1&page=1",
                       "host": [
-                        "{{base_url}}"
+                        "{{apis_url}}"
                       ],
                       "path": [
                         "questions",
@@ -1387,9 +1387,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/questions/part7/?set_type=Double&passage_types[]=Email&passage_types[]=Letter&difficulty=Medium&limit=1&page=1",
+                      "raw": "{{apis_url}}/questions/part7/?set_type=Double&passage_types[]=Email&passage_types[]=Letter&difficulty=Medium&limit=1&page=1",
                       "host": [
-                        "{{base_url}}"
+                        "{{apis_url}}"
                       ],
                       "path": [
                         "questions",
@@ -1444,9 +1444,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/questions/part7/{{set_id}}/answers/{{question_seq}}",
+                  "raw": "{{apis_url}}/questions/part7/{{set_id}}/answers/{{question_seq}}",
                   "host": [
-                    "{{base_url}}"
+                    "{{apis_url}}"
                   ],
                   "path": [
                     "questions",
@@ -1465,9 +1465,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/questions/part7/658a1b2c3d4e5f6a7b8c9d0e/answers/1",
+                      "raw": "{{apis_url}}/questions/part7/658a1b2c3d4e5f6a7b8c9d0e/answers/1",
                       "host": [
-                        "{{base_url}}"
+                        "{{apis_url}}"
                       ],
                       "path": [
                         "questions",
@@ -1498,9 +1498,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/questions/part7/set_types?used_only=false",
+                  "raw": "{{apis_url}}/questions/part7/set_types?used_only=false",
                   "host": [
-                    "{{base_url}}"
+                    "{{apis_url}}"
                   ],
                   "path": [
                     "questions",
@@ -1524,9 +1524,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/questions/part7/set_types?used_only=false",
+                      "raw": "{{apis_url}}/questions/part7/set_types?used_only=false",
                       "host": [
-                        "{{base_url}}"
+                        "{{apis_url}}"
                       ],
                       "path": [
                         "questions",
@@ -1561,9 +1561,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/questions/part7/passage_types?set_type=Single&used_only=false",
+                  "raw": "{{apis_url}}/questions/part7/passage_types?set_type=Single&used_only=false",
                   "host": [
-                    "{{base_url}}"
+                    "{{apis_url}}"
                   ],
                   "path": [
                     "questions",
@@ -1592,9 +1592,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/questions/part7/passage_types?set_type=Single&used_only=false",
+                      "raw": "{{apis_url}}/questions/part7/passage_types?set_type=Single&used_only=false",
                       "host": [
-                        "{{base_url}}"
+                        "{{apis_url}}"
                       ],
                       "path": [
                         "questions",
@@ -1633,9 +1633,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/questions/part7/passage_combinations?set_type=Double",
+                  "raw": "{{apis_url}}/questions/part7/passage_combinations?set_type=Double",
                   "host": [
-                    "{{base_url}}"
+                    "{{apis_url}}"
                   ],
                   "path": [
                     "questions",
@@ -1659,9 +1659,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/questions/part7/passage_combinations?set_type=Double",
+                      "raw": "{{apis_url}}/questions/part7/passage_combinations?set_type=Double",
                       "host": [
-                        "{{base_url}}"
+                        "{{apis_url}}"
                       ],
                       "path": [
                         "questions",
@@ -1694,9 +1694,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/questions/part7/passage_combinations?set_type=Triple",
+                      "raw": "{{apis_url}}/questions/part7/passage_combinations?set_type=Triple",
                       "host": [
-                        "{{base_url}}"
+                        "{{apis_url}}"
                       ],
                       "path": [
                         "questions",
@@ -1731,9 +1731,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/questions/part7/difficulties?set_type=Single&used_only=false",
+                  "raw": "{{apis_url}}/questions/part7/difficulties?set_type=Single&used_only=false",
                   "host": [
-                    "{{base_url}}"
+                    "{{apis_url}}"
                   ],
                   "path": [
                     "questions",
@@ -1762,9 +1762,9 @@
                     "method": "GET",
                     "header": [],
                     "url": {
-                      "raw": "{{base_url}}/questions/part7/difficulties?set_type=Single&used_only=false",
+                      "raw": "{{apis_url}}/questions/part7/difficulties?set_type=Single&used_only=false",
                       "host": [
-                        "{{base_url}}"
+                        "{{apis_url}}"
                       ],
                       "path": [
                         "questions",
@@ -1811,9 +1811,9 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{base_url}}/admin/system/health",
+              "raw": "{{apis_url}}/admin/system/health",
               "host": [
-                "{{base_url}}"
+                "{{apis_url}}"
               ],
               "path": [
                 "admin",
@@ -1830,9 +1830,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/admin/system/health",
+                  "raw": "{{apis_url}}/admin/system/health",
                   "host": [
-                    "{{base_url}}"
+                    "{{apis_url}}"
                   ],
                   "path": [
                     "admin",
@@ -1861,9 +1861,9 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{base_url}}/admin/system/db-status",
+              "raw": "{{apis_url}}/admin/system/db-status",
               "host": [
-                "{{base_url}}"
+                "{{apis_url}}"
               ],
               "path": [
                 "admin",
@@ -1880,9 +1880,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{base_url}}/admin/system/db-status",
+                  "raw": "{{apis_url}}/admin/system/db-status",
                   "host": [
-                    "{{base_url}}"
+                    "{{apis_url}}"
                   ],
                   "path": [
                     "admin",
@@ -1942,10 +1942,16 @@
   ],
   "variable": [
     {
-      "key": "base_url",
-      "value": "http://localhost:8000/api/v1",
+      "key": "admin_url",
+      "value": "http://ruoserver.iptime.org:30111/api/v1",
       "type": "string",
-      "description": "API 기본 URL (배포 환경에 맞게 변경하세요)"
+      "description": "관리자 API 기본 URL (배포 환경에 맞게 변경하세요)"
+    },
+    {
+      "key": "apis_url",
+      "value": "http://ruoserver.iptime.org:30110/api/v1",
+      "type": "string",
+      "description": "사용자 API 기본 URL (배포 환경에 맞게 변경하세요)"
     }
   ]
 }

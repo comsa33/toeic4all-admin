@@ -10,3 +10,4 @@ wheels/
 .venv
 app/.env
 logs
+toeic4all-postman-collection.json
