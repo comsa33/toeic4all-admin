@@ -50,3 +50,7 @@ spec:
           value: {{ .Values.databaseName }}
         - name: DEBUG
           value: "{{ .Values.debug }}"
+        - name: REDIS_URL
+          value: {{ .Values.redisUrl }}
+        - name: REDIS_TTL
+          value: "{{ .Values.redisTtl }}"

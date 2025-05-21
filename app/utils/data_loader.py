@@ -12,7 +12,7 @@ from pymongo.errors import (
     ServerSelectionTimeoutError,
 )
 
-from app.utils.db import get_collection
+from app.db.mongodb import get_collection
 from app.utils.logger import logger
 from app.utils.models.part5_question import Part5Question
 from app.utils.models.part6_question import Part6Set

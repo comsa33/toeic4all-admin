@@ -51,6 +51,19 @@ class MongoDBSettings(BaseSettings):
         return v
 
 
+class RedisSettings(BaseSettings):
+    """Redis 관련 설정"""
+
+    redis_url: str = Field(
+        default_factory=lambda: os.getenv("REDIS_URL", "redis://localhost:6379/0"),
+        description="Redis 연결 URL",
+    )
+    redis_ttl: int = Field(
+        default_factory=lambda: int(os.getenv("REDIS_TTL", "3600")),
+        description="Redis 키 기본 TTL (초)",
+    )
+
+
 class APISettings(BaseSettings):
     """API 관련 설정"""
 
@@ -85,7 +98,7 @@ class AppSettings(BaseSettings):
     )
 
 
-class Settings(MongoDBSettings, APISettings, AppSettings):
+class Settings(MongoDBSettings, APISettings, AppSettings, RedisSettings):
     """모든 설정을 통합한 클래스"""
 
     @property

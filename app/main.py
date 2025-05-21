@@ -6,8 +6,9 @@ from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
-from app.routes.admin import part5_routes, part6_routes, part7_routes
-from app.utils.db import close_mongodb_connection, connect_to_mongodb, mongodb
+from app.db.mongodb import close_mongodb_connection, connect_to_mongodb, mongodb
+from app.db.redis_lock import RedisClient
+from app.routes.admin import part5_routes, part6_routes, part7_routes, system_routes
 from app.utils.logger import setup_logging
 
 # 로깅 설정
@@ -20,14 +21,26 @@ logger = logging.getLogger("toeic4all")
 async def lifespan(app: FastAPI):
     # 시작 이벤트 처리 (startup)
     app.start_time = datetime.datetime.now(datetime.timezone.utc)
-    logger.info("Starting application, connecting to MongoDB...")
+    logger.info("Starting application, connecting to MongoDB and Redis...")
+
+    # MongoDB 연결
     await connect_to_mongodb()
     logger.info("MongoDB connection established")
+
+    # Redis 연결
+    await RedisClient.get_instance()
+    logger.info("Redis connection established")
 
     yield  # 이 지점에서 애플리케이션이 실행됨
 
     # 종료 이벤트 처리 (shutdown)
-    logger.info("Shutting down application, closing MongoDB connection...")
+    logger.info("Shutting down application, closing connections...")
+
+    # Redis 연결 종료
+    await RedisClient.close()
+    logger.info("Redis connection closed")
+
+    # MongoDB 연결 종료
     await close_mongodb_connection()
     logger.info("MongoDB connection closed")
 
@@ -76,6 +89,12 @@ app.include_router(
     part7_routes.router,
     prefix=f"{settings.api_prefix}/admin/part7",
     tags=["Admin - Part 7"],
+)
+# 시스템 관리 API 라우터 등록
+app.include_router(
+    system_routes.router,
+    prefix=f"{settings.api_prefix}/admin/system",
+    tags=["Admin - System"],
 )
 
 
