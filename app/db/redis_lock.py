@@ -71,7 +71,7 @@ class RedisLock:
         """
 
         result = await self.redis.eval(
-            script, keys=[f"lock:{self.lock_name}"], args=[self.lock_value]
+            script, 1, f"lock:{self.lock_name}", self.lock_value
         )
 
         if result:
