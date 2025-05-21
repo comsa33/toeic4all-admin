@@ -3,8 +3,8 @@ import time
 import uuid
 from typing import Optional
 
-import aioredis
 from fastapi import HTTPException
+from redis.asyncio import Redis
 
 from app.utils.logger import logger
 
@@ -14,7 +14,7 @@ class RedisLock:
 
     def __init__(
         self,
-        redis_client: aioredis.Redis,
+        redis_client: Redis,
         lock_name: str,
         expire_seconds: int = 60,
         retry_delay: float = 0.1,
@@ -106,18 +106,16 @@ class RedisClient:
     """Redis 클라이언트 싱글톤"""
 
     _instance = None
-    _redis: Optional[aioredis.Redis] = None
+    _redis: Optional[Redis] = None
 
     @classmethod
-    async def get_instance(cls) -> aioredis.Redis:
+    async def get_instance(cls) -> Redis:
         if cls._redis is None:
-            # 환경 변수에서 Redis URL 로드 (app.config에서 가져오거나 직접 설정)
+            # 환경 변수에서 Redis URL 로드
             from app.config import settings
 
             redis_url = getattr(settings, "redis_url", "redis://localhost:6379/0")
-            cls._redis = aioredis.from_url(
-                redis_url, encoding="utf-8", decode_responses=True
-            )
+            cls._redis = Redis.from_url(redis_url, decode_responses=True)
             logger.info(f"Redis connection established to {redis_url}")
         return cls._redis
 
